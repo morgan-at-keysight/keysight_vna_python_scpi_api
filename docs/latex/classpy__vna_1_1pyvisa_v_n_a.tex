@@ -1,0 +1,1753 @@
+\doxysection{py\+\_\+vna.\+pyvisa\+VNA Class Reference}
+\hypertarget{classpy__vna_1_1pyvisa_v_n_a}{}\label{classpy__vna_1_1pyvisa_v_n_a}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a7bceb860aaec4b2f022f900b90bedc44}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, visa\+Address, timeout\+Ms=10000, open\+Timeout\+Ms=100)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ab09b7c474859e869da86b14d733d52a6}{close}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a99b32319d14c990ac5367c5c618c2c3d}{print\+\_\+capabilities}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ad06a1eb44883d705185f88a20dfc0a4c}{err\+\_\+check}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aedf82db63b4e72b167f8918fa6a00e96}{source\+\_\+unleveled\+\_\+check}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aaec78420c4326090528b65f2b48e05e9}{wait\+\_\+for\+\_\+opc}} (self, temp\+Timeout=None)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_af3a915a3c5d4408bf5a043b83cd3516a}{preset}} (self, clear\+All=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aee0be69e1af7df19322e8e299c6dd7fe}{get\+\_\+meas\+\_\+number\+\_\+from\+\_\+name}} (self, meas\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a416905f532f23efcb3dbaa7a9d74a921}{get\+\_\+meas\+\_\+names}} (self, ch=1, include\+Params=0)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a8112681aae23d8870f9fe1fce4ddf4e1}{select\+\_\+channel}} (self, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ae49a231e4b3b0e72e0247d3aa966d167}{get\+\_\+trace}} (self, meas\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a4c6068d290a302e8bb8386e2198d9cfe}{get\+\_\+file}} (self, vna\+Path, remote\+Path)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a5db48b93f6a87bbb248c99be61661faa}{send\+\_\+file}} (self, remote\+Path, vna\+Path)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a193adcc7a0d312c4dc64dd3167411ba7}{save\+\_\+screenshot}} (self, file\+Path)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a06ed39a5b39e1273b11240ace0c63b00}{save\+\_\+csv}} (self, meas\+Name, file\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aa46e1d193cfcf204ef736002255f7fa0}{single\+\_\+trigger}} (self, temp\+Timeout=None, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ae1a0ec8b6a63ce09ed9a0ca4fece6fc4}{hold\+\_\+trigger}} (self, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aae803084641bba71534e69ba6487ae93}{marker\+\_\+activate}} (self, mkr\+Num, meas\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aea85044f589e24b243dc16a7a59b6526}{marker\+\_\+format}} (self, mkr\+Num, meas\+Name, format=\textquotesingle{}default\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a94ab33817ce1d34560c469edca9b1f5f}{marker\+\_\+set\+\_\+x}} (self, mkr\+Num, meas\+Name, mkrX, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a862de4b0280d339d91a84dc89b43e597}{marker\+\_\+get\+\_\+x}} (self, mkr\+Num, meas\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_af892ac2b90a40f7e8da86a35df7677f7}{marker\+\_\+get\+\_\+y}} (self, mkr\+Num, meas\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a1e5e690b4264dc6504babec6fecc3776}{add\+\_\+memory\+\_\+to\+\_\+all\+\_\+traces}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a7be9c96252d36b67b50264c32ecfdd1c}{configure\+\_\+limit\+\_\+segment}} (self, meas\+Name, segment\+Num, x\+Start=10e6, x\+Stop=1e9, y\+Start=-\/20, y\+Stop=-\/20, limit\+Type=\textquotesingle{}lmin\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a46c1767b69bf67f224da5cddd5bb4468}{configure\+\_\+limit\+\_\+test}} (self, meas\+Name, limit\+State=1, limit\+Display=1, limit\+Sound=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aad45c0c404067b7b47af02c9443f0524}{get\+\_\+limit\+\_\+status}} (self, meas\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a14017ca7e0d89b32981979a611cd6b00}{recall\+\_\+state\+\_\+file}} (self, file\+Name)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ab3a0fd4a0b10a8fd8e6b845f6e4717ec}{set\+\_\+frequency\+\_\+reference}} (self, is\+Ext\+Reference=1, ref\+Freq=100e6)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a5346e33b688aedfb4a76f5d657a68214}{configure\+\_\+receiver\+\_\+gain}} (self, source\+Port=1, receiever\+Port=2, gain=\textquotesingle{}auto\textquotesingle{}, gain\+Coupling=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a06a734a26a125aca98e3f757aa71f4b5}{configure\+\_\+receiver\+\_\+path}} (self, receiver=\textquotesingle{}b2\textquotesingle{}, rf\+In\+Switch=\textquotesingle{}auto\textquotesingle{}, rf\+Attenuation=18, if\+Gain=\textquotesingle{}auto\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aef088a3a0f2a64e40426ac86f9029b8d}{configure\+\_\+receiver\+\_\+leveling}} (self, port=1, leveling\+Receiver=\textquotesingle{}r1\textquotesingle{}, leveling\+Type=\textquotesingle{}presweep\textquotesingle{}, max\+Power=0, min\+Power=-\/100, leveling\+Tolerance=0.\+1, leveling\+Max\+Iterations=5, enable\+Leveling=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_af9cc3839a97eacc3e50824864462568a}{configure\+\_\+power\+\_\+offset}} (self, port=1, power\+Offset=0, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a934dab0ec31ac0b2f00699646b427792}{list\+\_\+cal\+\_\+sets}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aa96bd0fc0962f5e0ff180ff7314eb508}{load\+\_\+cal\+\_\+set}} (self, cal\+Set, use\+Cal\+Set\+Stimulus=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_adb06d25946f617ada41c0835124b533e}{define\+\_\+smart\+\_\+cal}} (self, num\+Ports=2, connectors=\mbox{[}\textquotesingle{}APC 3.\+5 female\textquotesingle{}, \textquotesingle{}APC 3.\+5 female\textquotesingle{}\mbox{]}, cal\+Kits=\mbox{[}\textquotesingle{}N4691D User 1 ECal MY57450056\textquotesingle{}, \textquotesingle{}N4691D User 1 ECal MY57450056\textquotesingle{}\mbox{]}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a0c3aaec2d44597b30537a0e66817f0b8}{define\+\_\+cal\+\_\+all}} (self, selected\+Channels=\textquotesingle{}all\textquotesingle{}, port\+Array=\mbox{[}1, 2\mbox{]}, connectors=\mbox{[}\textquotesingle{}APC 3.\+5 female\textquotesingle{}, \textquotesingle{}APC 3.\+5 female\textquotesingle{}\mbox{]}, cal\+Kits=\mbox{[}\textquotesingle{}N4693D User 1 ECal MY62350179\textquotesingle{}, \textquotesingle{}N4693D User 1 ECal MY62350179\textquotesingle{}\mbox{]}, include\+Power\+Cal=0, power\+Cal\+Level=0, sparam\+Cal\+Level=-\/15, offset\+Ports=\mbox{[}1\mbox{]}, power\+Offset=\mbox{[}0\mbox{]}, sa\+Cal\+Points=101, ps\+Visa=\textquotesingle{}USB0\+::0x0957\+::0x2\+C18\+::\+MY53400002\+::0\+::\+INSTR\textquotesingle{})
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a1dae135213e18e13d56c0e50aab7fa19}{measure\+\_\+cal\+\_\+standard}} (self, standard\+Number, blocking=1, timeout\+Ms=30000, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a9260408ac2c561c1f6efe49556797753}{run\+\_\+cal}} (self, cal\+Set\+Name=\textquotesingle{}my cal\textquotesingle{}, cal\+Set\+Timestamp\+Suffix=1, blocking=1, timeout\+Ms=60000, ch=1, prompt\+User=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ab18aee84bdba7a0469906e8f35d7b544}{deembed\+\_\+calset}} (self, base\+Calset, final\+Calset, port\+One\+S2p, port\+Two\+S2p, enhanced\+Response=1, port\+One\+Power\+Comp=0, port\+Two\+Power\+Comp=0, enable\+Extrapolation=0, over\+Write=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_acbd5848d6be88c80225039a1644673a0}{deembed\+\_\+s2p\+\_\+file}} (self, vna\+Port, s2p\+File\+Name, reverse\+S2p=0, snn\+Zero=0, enable\+Extrapolation=0, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a56dda5eb307509f5de4af9ded4511bf1}{get\+\_\+ecal\+\_\+module\+\_\+nums}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a4c6b61cad10f6eae1eca1d184b1a8d9b}{get\+\_\+ecal\+\_\+module\+\_\+states}} (self, ecal\+Num=1, num\+Ports=2)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a79a08e90bf3f3e22eab85d1bdc01e60c}{get\+\_\+individual\+\_\+ecal\+\_\+info}} (self, ecal\+Num=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a47dd1810cf2307d3c8a6b215ef42a388}{get\+\_\+individual\+\_\+ecal\+\_\+model\+\_\+serial}} (self, ecal\+Num=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_affc6b144dc03f1089a7e84e2e37231c9}{get\+\_\+all\+\_\+ecal\+\_\+model\+\_\+serial}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a5dd59995dd36e4363520bbb5710680c3}{get\+\_\+all\+\_\+ecal\+\_\+info}} (self)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_af8e214a9d1438bf4db9495167106dd36}{get\+\_\+ecal\+\_\+sparam\+\_\+data}} (self, ecal\+Num=1, char=0, debug=0)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_abdbf670fc23e2435d6d1adef01b0c243}{set\+\_\+ecal\+\_\+path}} (self, ecal\+Num=1, path=\textquotesingle{}a\textquotesingle{}, state=1, num\+Ports=2)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ab4ff0a24a9db0c55fcf06e4e56c7e866}{new\+\_\+sparam\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Return\+Loss\textquotesingle{}, meas\+Param=\textquotesingle{}S11\textquotesingle{}, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a6521e46d600ad20aab800d237e1ad827}{configure\+\_\+sparam\+\_\+stimulus}} (self, start\+Freq=10e6, stop\+Freq=44e9, port\+Power=-\/15, num\+Points=201, if\+Bw=100e3, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a77618857e06254c209f0c773777497ec}{save\+\_\+s2p}} (self, meas\+Name, file\+Name, ports=\mbox{[}1, 2\mbox{]}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a02fabdf4a72e5bfdf4c51d24147fba0d}{load\+\_\+s2p}} (self, file\+Name)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a4fb601fa6da07a56ad875da9427fbfcb}{new\+\_\+mod\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Input\+Power\textquotesingle{}, meas\+Param=\textquotesingle{}PIn1\textquotesingle{}, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a50891e5883883fc56ab8314d1061f5d8}{configure\+\_\+mod\+\_\+sweep}} (self, sweep\+Type=\textquotesingle{}fixed\textquotesingle{}, center\+Freq=1e9, span=300e6, noise\+Bw=200, power=-\/30, power\+Context=\textquotesingle{}din1\textquotesingle{}, start\+Power=-\/20, stop\+Power=-\/10, power\+Points=11, auto\+Increase\+Noise\+Bw=0, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a7347b3d00f7b8e45e93d4b5a5be8d006}{configure\+\_\+mod\+\_\+rfpath}} (self, src\+Atten=0, include\+Src\+Atten=1, input\+Port=1, output\+Port=2, recv\+Atten=0, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a8fc6775c2891b9f79ebe23d272a6a89b}{add\+\_\+mod\+\_\+source}} (self, source\+Name=\textquotesingle{}VXT\textquotesingle{}, driver=\textquotesingle{}VXT\+\_\+\+Vector\textquotesingle{}, io\+Config=\textquotesingle{}TCPIP0\+::127.\+0.\+0.\+1\+::hislip0\+::\+INSTR\textquotesingle{}, dev\+Type=\textquotesingle{}Source\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a80c611122b1d98ffc24503f5db409ff1}{configure\+\_\+mod\+\_\+modulate}} (self, source\+Name=\textquotesingle{}VXT\textquotesingle{}, mod\+File=\textquotesingle{}C\+:\textbackslash{}\textbackslash{}\+Users\textbackslash{}\textbackslash{}\+Instrument\textbackslash{}\textbackslash{}\+Desktop\textbackslash{}\textbackslash{}example.\+mdx\textquotesingle{}, enable\+Mod=1, enable\+Src\+Corr=0, enable\+Lo\+Feedthru=0, reset=0, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aeba708882483ea60a0c315c62fb89c6e}{configure\+\_\+mod\+\_\+create\+\_\+mtone\+\_\+mdx}} (self, span=100e6, tone\+Spacing=100e3, num\+Tones=1001, carr\+Offset=0, phase\+Type=\textquotesingle{}random\textquotesingle{}, dac\+Scaling=70, enable\+Optimizer=0, file\+Name=\textquotesingle{}C\+:/Users/Public/Documents/Network Analyzer/multitone.\+mdx\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a69d1eb671802b5ce07516edaaad07ee0}{configure\+\_\+mod\+\_\+create\+\_\+compact\+\_\+mdx}} (self, original\+File\+Name=\textquotesingle{}C\+:/Users/Public/Documents/Network Analyzer/iq.\+csv\textquotesingle{}, sample\+Rate=0, span=0, tone\+Spacing=0, num\+Tones=0, carr\+Offset=0, dac\+Scaling=70, enable\+Optimizer=1, file\+Name=\textquotesingle{}C\+:/Users/Public/Documents/Network Analyzer/compact.\+mdx\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a9e52bd618c6e00392155f5bd5601659d}{configure\+\_\+mod\+\_\+source\+\_\+cal}} (self, cal\+Type=\textquotesingle{}power\textquotesingle{}, max\+Iterations=3, desired\+Tolerance=0.\+1, cal\+Span=100e6, guard\+Band=0, port=1, enable\+Cal=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ace31400206c74c57cd06af5118558c13}{configure\+\_\+mod\+\_\+source\+\_\+cal\+\_\+details}} (self, enable\+Fast\+Cal=0, rf\+Power\+Type=\textquotesingle{}fixed\textquotesingle{}, power=-\/30, rf\+Carrier\+Type=\textquotesingle{}fixed\textquotesingle{}, freq=1e9, stop\+Power=-\/20, stop\+Freq=2e9, power\+Points=11, freq\+Points=11, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a98454d98343d60d5471223085f13a834}{initiate\+\_\+source\+\_\+correction\+\_\+cal}} (self, timeout\+Ms=60000, source\+Name=\textquotesingle{}VXT\textquotesingle{}, retry=1, max\+Retries=3, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ae5ef1dc1fc700a65c48961ce334ec9b9}{enable\+\_\+source\+\_\+correction}} (self, correction\+Type=\textquotesingle{}modpwr\textquotesingle{}, enable=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ab49561dd1a2ce718b0707da171c51ca8}{configure\+\_\+mod\+\_\+evm\+\_\+meas}} (self, offset\+Freq=0, integ\+Bw=100e6, autofill=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ab99ba7dbbf587076b1745410190bcfe3}{configure\+\_\+mod\+\_\+acpevm\+\_\+meas}} (self, offset\+Freq=0, integ\+Bw=100e6, acp\+Lo\+Freq=-\/100e6, acp\+Lo\+Integ\+Bw=100e6, acp\+Up\+Freq=100e6, acp\+Up\+Integ\+Bw=100e6, autofill=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a6d96f3667370282edf6fe947dd06b275}{configure\+\_\+mod\+\_\+meas\+\_\+details}} (self, eq\+Aperture\+Auto=1, eq\+Aperture=15e6, anti\+Alias\+Filter=\textquotesingle{}auto\textquotesingle{}, evm\+Norm=1.\+0, mod\+Filter=\textquotesingle{}none\textquotesingle{}, mod\+Filter\+Alpha=0.\+35, sym\+Rate\+Auto=1, sym\+Rate=200e6, dut\+Nf=0, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aa740f035d186f8eab30a70fd38c8607d}{add\+\_\+mod\+\_\+table\+\_\+parameter}} (self, mod\+Table\+Param=\textquotesingle{}Carrier In1 d\+Bm\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a534b56485f6ce14a559270bd4630f624}{delete\+\_\+mod\+\_\+table\+\_\+parameter}} (self, mod\+Table\+Param=\textquotesingle{}Carrier In1 d\+Bm\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a40f3ad69f986e95502ab1beb11c74f6b}{save\+\_\+mod\+\_\+distortion\+\_\+table}} (self, file\+Name=\textquotesingle{}C\+:/Users/Public/Documents/Network Analyzer/distortion\+\_\+table.\+csv\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a07285ada85be063d01f34febc6d7e4e9}{show\+\_\+distortion\+\_\+table}} (self, win=1, enabled=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ada996075c3d84e21fefcc1a6a76c8262}{get\+\_\+mod\+\_\+data}} (self, mod\+Table\+Param=\textquotesingle{}Carrier In1 d\+Bm\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a8187c85fd43eed21e76fbac7cab2b80f}{configure\+\_\+modx\+\_\+rfpath}} (self, src\+Atten=0, include\+Src\+Atten=1, input\+Port=1, output\+Port=2, recv\+Atten=0, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a4ed8985a613abe73837ec14be79e35a4}{new\+\_\+modx\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Input\+Power\textquotesingle{}, meas\+Param=\textquotesingle{}PIn1\textquotesingle{}, modify=0, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a1c47e22a375ad406718765e0e466234e}{configure\+\_\+modx\+\_\+mixer}} (self, lo\+Freq=1e9, sideband=\textquotesingle{}low\textquotesingle{}, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a665f1bb0cf1dd033a4fb68da88822bea}{configure\+\_\+modx\+\_\+embedded\+\_\+lo}} (self, tuning\+Method=\textquotesingle{}broadband\textquotesingle{}, sweep\+Interval=1, span=3e6, noise\+Bw=10e3, iterations=5, tolerance=5, enable=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a78f48ee67f67222624f3b7d70d71397f}{new\+\_\+gca\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Gain\+At\+Compression\textquotesingle{}, meas\+Param=\textquotesingle{}Comp\+Gain21\textquotesingle{}, modify=0, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a4097688033b1cad93ef682cda43eb2a0}{configure\+\_\+gca\+\_\+frequency\+\_\+stimulus}} (self, sweep\+Type=\textquotesingle{}linear\textquotesingle{}, acq\+Mode=\textquotesingle{}smartsweep\textquotesingle{}, num\+Points=201, start\+Freq=1e9, stop\+Freq=2e9, if\+Bw=100e3, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ab35187fbf8d0ef684c39655e844b2f03}{configure\+\_\+gca\+\_\+power\+\_\+stimulus}} (self, input\+Port=1, output\+Port=2, linear\+Power=-\/30, reverse\+Power=-\/20, start\+Power=-\/30, stop\+Power=-\/10, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a5e5c20e28ddb7153b6e65256857428ef}{configure\+\_\+gca\+\_\+safe\+\_\+mode\+\_\+stimulus}} (self, safe\+Mode=0, coarse\+Inc=3, fine\+Inc=1, thresh=0.\+5, limit=20, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a593408775ecb7b3551fa7a34804a00ed}{configure\+\_\+gca\+\_\+compression\+\_\+analysis}} (self, meas\+Name, cw\+Freq, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a2b51e35ce2cec8736d526b9e0a9515e1}{get\+\_\+cw\+\_\+freq}} (self, meas\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a9b4d26fd12bf5d70505f499a8f9a3fe5}{new\+\_\+gcax\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Gain\+At\+Compression\textquotesingle{}, meas\+Param=\textquotesingle{}Comp\+Gain21\textquotesingle{}, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a73cadd34a2e1b1195888c49197d17379}{configure\+\_\+gcax\+\_\+frequency\+\_\+stimulus}} (self, sweep\+Type=\textquotesingle{}linear\textquotesingle{}, acq\+Mode=\textquotesingle{}smartsweep\textquotesingle{}, num\+Points=201, start\+Freq=1e9, stop\+Freq=2e9, if\+Bw=100e3, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a30123f6a96b7a0078d0f9da832043630}{configure\+\_\+gcax\+\_\+power\+\_\+stimulus}} (self, input\+Port=1, output\+Port=2, linear\+Power=-\/30, reverse\+Power=-\/20, start\+Power=-\/30, stop\+Power=-\/10, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a28919a5898ba60c82500ea84edd7ca58}{configure\+\_\+gcax\+\_\+safe\+\_\+mode\+\_\+stimulus}} (self, safe\+Mode=0, coarse\+Inc=3, fine\+Inc=1, thresh=0.\+5, limit=20, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aafdcc6397fdab1b47bff6e91e51b17db}{configure\+\_\+mixer\+\_\+frequency}} (self, start\+Freq=3e9, stop\+Freq=3.\+5e9, lo\+Freq=2.\+5e9, sideband=\textquotesingle{}low\textquotesingle{}, input\+Greater=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a8044156e4d3f0f7aafdaf600d4155e32}{configure\+\_\+embedded\+\_\+lo}} (self, tuning\+Method=\textquotesingle{}broadband\textquotesingle{}, tuning\+Point=401, sweep\+Interval=1, span=1e6, if\+Bw=10e3, iterations=5, tolerance=5, enable=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a8a764fdc0b69a9b13bb4e18f3e34bb7e}{get\+\_\+lo\+\_\+frequency\+\_\+delta}} (self, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ae4cd60cd8d3e5423299b4834ebfbdb2d}{new\+\_\+sa\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Spectrum\textquotesingle{}, meas\+Param=\textquotesingle{}B\textquotesingle{}, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aed2c1ec47ab6587bbb57d0dff7382e08}{configure\+\_\+sa\+\_\+sweep}} (self, center\+Freq=1e9, span=1e9, start\+Freq=500e6, stop\+Freq=1.\+5e9, num\+Points=801, res\+Bw=1e6, video\+Bw=1e6, detector\+Type=\textquotesingle{}peak\textquotesingle{}, use\+Start\+Stop=1, res\+Bw\+Auto=1, video\+Bw\+Auto=1, detector\+Bypass=0, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ae4cb995eeadfe9028f5efd8dd64ab94d}{configure\+\_\+sa\+\_\+source}} (self, source\+Port=1, port\+State\+On=0, source\+Freq=1e9, source\+Power=-\/15, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a9c308e5e1270354d45500063dd52db89}{configure\+\_\+sa\+\_\+band\+\_\+power\+\_\+marker}} (self, mkr\+Num, meas\+Name, mkr\+Center\+Freq=1e9, span=1e6, band\+Power\+State=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a68b0f012bb3d65eed32c3ebf177ba4d1}{get\+\_\+sa\+\_\+marker\+\_\+band\+\_\+power}} (self, mkr\+Num, meas\+Name, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a115c4914d0fb311c6087b244d09247e7}{new\+\_\+smc\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Forward\+Conversion\textquotesingle{}, meas\+Param=\textquotesingle{}SC21\textquotesingle{}, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ac8b539d1e688e330ec047d14e66dde4f}{configure\+\_\+smc\+\_\+stimulus}} (self, input\+Port=1, output\+Port=2, port\+Power=-\/15, num\+Points=201, if\+Bw=10e3, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a94dad5148a3cf1e6b450388d6c5c3a10}{new\+\_\+nf\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Noise Figure\textquotesingle{}, meas\+Param=\textquotesingle{}NF\textquotesingle{}, modify=0, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a01580887c5c01721f6e3a62dd246dc69}{configure\+\_\+nf\+\_\+frequency}} (self, sweep\+Type=\textquotesingle{}linear\textquotesingle{}, num\+Points=41, start\+Freq=10e6, stop\+Freq=44e9, if\+Bw=1e3, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a9ea1facc074f533d22a67bb29ce8e821}{configure\+\_\+nf\+\_\+power}} (self, input\+Port=1, output\+Port=2, power=-\/20, reverse\+Power=-\/20, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_adf9fe9ad85e63f6e7281f7bd398e6de7}{configure\+\_\+nf\+\_\+noise\+\_\+figure}} (self, noise\+Bw=4e6, avg\+State=1, avg\+Num=100, receiver\+Gain=30, source\+Temp=297, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a7a114858aaa83e39c420f4724be3297a}{new\+\_\+nfx\+\_\+trace}} (self, meas\+Name=\textquotesingle{}Noise Figure\textquotesingle{}, meas\+Param=\textquotesingle{}NF\textquotesingle{}, modify=0, win=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_ab30d78ac9f4e063884f2dc363b0cdd44}{spdt\+\_\+enable}} (self, state=1, module=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a99ba041b14ced8a3e7b8cc876a0d9dc4}{spdt\+\_\+get\+\_\+path\+\_\+catalog}} (self, module=1, switch=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a96af47ba16d4a00d0d153f92c736dab3}{spdt\+\_\+close\+\_\+connection}} (self, module=1, switch=1, route=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a87162004431b73847d7c85760065f1bf}{spdt\+\_\+connection\+\_\+status}} (self, module=1, switch=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a8c538645c6728f6314643fa4d6b2042e}{sp6t\+\_\+enable}} (self, state=1, module=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_aea2aba826e4bd15a77ff31ab64d56c3f}{sp6t\+\_\+close\+\_\+connection}} (self, module=1, route=1, ch=1)
+\item 
+\mbox{\hyperlink{classpy__vna_1_1pyvisa_v_n_a_a0dcdabcd3c90a65ea12dfe351c640864}{sp6t\+\_\+connection\+\_\+status}} (self, module=1, ch=1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a1ca89f1e6b7506e18aa851473f1c82f3}\label{classpy__vna_1_1pyvisa_v_n_a_a1ca89f1e6b7506e18aa851473f1c82f3} 
+{\bfseries inst} = pyvisa.\+Resource\+Manager().open\+\_\+resource(visa\+Address, open\+\_\+timeout=open\+Timeout\+Ms)
+\item 
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a03184c134925e21cafe6a496a1c3ec18}\label{classpy__vna_1_1pyvisa_v_n_a_a03184c134925e21cafe6a496a1c3ec18} 
+{\bfseries inst\+ID} = self.\+inst.\+query(\textquotesingle{}\texorpdfstring{$\ast$}{*}idn?\textquotesingle{}).rstrip()
+\item 
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a9431bd874b1ddde7272ca9f7977c7d69}\label{classpy__vna_1_1pyvisa_v_n_a_a9431bd874b1ddde7272ca9f7977c7d69} 
+{\bfseries inst\+Options} = self.\+inst.\+query(\textquotesingle{}\texorpdfstring{$\ast$}{*}opt?\textquotesingle{})
+\item 
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ac7d403264f57e9755c71b545e484e8d0}\label{classpy__vna_1_1pyvisa_v_n_a_ac7d403264f57e9755c71b545e484e8d0} 
+{\bfseries num\+Ports} = int(self.\+inst.\+query(\textquotesingle{}system\+:capability\+:hardware\+:ports\+:count?\textquotesingle{}))
+\item 
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a7aa820029a63a8acc5bb247ceeba8741}\label{classpy__vna_1_1pyvisa_v_n_a_a7aa820029a63a8acc5bb247ceeba8741} 
+{\bfseries port\+Catalog} = self.\+inst.\+query(\textquotesingle{}system\+:capability\+:hardware\+:ports\+:catalog?\textquotesingle{}).rstrip().strip(\textquotesingle{}"{}\textquotesingle{}).split(\textquotesingle{},\textquotesingle{})
+\item 
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ac41a28c0d99d6d8c71069c84ce3f7365}\label{classpy__vna_1_1pyvisa_v_n_a_ac41a28c0d99d6d8c71069c84ce3f7365} 
+{\bfseries num\+Sources} = int(self.\+inst.\+query(\textquotesingle{}system\+:capability\+:hardware\+:ports\+:source\+:count?\textquotesingle{}))
+\item 
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a66ae406b1591c2e1f0fb4669f8e89e9d}\label{classpy__vna_1_1pyvisa_v_n_a_a66ae406b1591c2e1f0fb4669f8e89e9d} 
+{\bfseries source\+Catalog} = self.\+inst.\+query(\textquotesingle{}system\+:capability\+:hardware\+:ports\+:source\+:catalog?\textquotesingle{}).rstrip().strip(\textquotesingle{}"{}\textquotesingle{}).split(\textquotesingle{},\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a7bceb860aaec4b2f022f900b90bedc44}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a7bceb860aaec4b2f022f900b90bedc44} 
+py\+\_\+vna.\+pyvisa\+VNA.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{visa\+Address}{, }\item[{}]{timeout\+Ms}{ = {\ttfamily 10000}, }\item[{}]{open\+Timeout\+Ms}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Class for controlling Keysight VNAs.
+
+Args:
+    visaAddress (str): Visa address of the instrument to be controlled, typically found in Keysight Conection Expert when the instrument is connected
+    timeoutMs (int): Timeout value in milliseconds for VISA commands. [default is 10000]
+    openTimeoutMs (int): Timeout value in milliseconds when connecting to the resource. [default is 10000]
+
+Attributes:
+    inst (base class for the connected resource): A PyVISA object to be used for communication with the VNA
+    instID (str): Instrument information: <company name>, <model number>, <serial number>, <firmware revision>
+    instOptions (list): List of all of the instrument options currently installed on the VNA
+    numPorts (int): The number of test ports including external testset ports on the VNA
+    portCatalog (list): The list of internal test port names on the VNA
+    numSources (int): The number of internal sources
+    sourceCatalog (list): The list of internal source port names
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a1e5e690b4264dc6504babec6fecc3776}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!add\_memory\_to\_all\_traces@{add\_memory\_to\_all\_traces}}
+\index{add\_memory\_to\_all\_traces@{add\_memory\_to\_all\_traces}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{add\_memory\_to\_all\_traces()}{add\_memory\_to\_all\_traces()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a1e5e690b4264dc6504babec6fecc3776} 
+py\+\_\+vna.\+pyvisa\+VNA.\+add\+\_\+memory\+\_\+to\+\_\+all\+\_\+traces (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves trace data to memory and changes display to Data and Memory FOR ALL TRACES.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a8fc6775c2891b9f79ebe23d272a6a89b}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!add\_mod\_source@{add\_mod\_source}}
+\index{add\_mod\_source@{add\_mod\_source}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{add\_mod\_source()}{add\_mod\_source()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a8fc6775c2891b9f79ebe23d272a6a89b} 
+py\+\_\+vna.\+pyvisa\+VNA.\+add\+\_\+mod\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{source\+Name}{ = {\ttfamily \textquotesingle{}VXT\textquotesingle{}}, }\item[{}]{driver}{ = {\ttfamily \textquotesingle{}VXT\+\_\+Vector\textquotesingle{}}, }\item[{}]{io\+Config}{ = {\ttfamily \textquotesingle{}TCPIP0\+:\+:127.0.0.1\+:\+:hislip0\+:\+:INSTR\textquotesingle{}}, }\item[{}]{dev\+Type}{ = {\ttfamily \textquotesingle{}Source\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a modulated source in the Modulate tab in Modulation Distortion.
+
+Args:
+    sourceName (str): User-specified name of the source to be added. [default is 'VXT']
+    driver (str): Instrument driver to be used to control the source. [see validDrivers below, default is 'VXT_Vector']
+    ioConfig (str): VISA address of the source. [default is x]
+    devType (str): Specifies what kind of device is being added. [default (and really only option) is 'Source']
+    ch (int): Channel for which source is added. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aa740f035d186f8eab30a70fd38c8607d}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!add\_mod\_table\_parameter@{add\_mod\_table\_parameter}}
+\index{add\_mod\_table\_parameter@{add\_mod\_table\_parameter}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{add\_mod\_table\_parameter()}{add\_mod\_table\_parameter()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aa740f035d186f8eab30a70fd38c8607d} 
+py\+\_\+vna.\+pyvisa\+VNA.\+add\+\_\+mod\+\_\+table\+\_\+parameter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mod\+Table\+Param}{ = {\ttfamily \textquotesingle{}Carrier~In1~dBm\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds the specified parameter to the Modulation Distortion table.
+
+Args:
+    modTableParam (str): Parameter to be added to the modulation distortion table. [see validParams, default is 'Carrier In1 dBm']
+    ch (int): Channel to which the parameter will be added. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ab09b7c474859e869da86b14d733d52a6}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!close@{close}}
+\index{close@{close}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ab09b7c474859e869da86b14d733d52a6} 
+py\+\_\+vna.\+pyvisa\+VNA.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gracefully closes PyVISA instrument connection.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a8044156e4d3f0f7aafdaf600d4155e32}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_embedded\_lo@{configure\_embedded\_lo}}
+\index{configure\_embedded\_lo@{configure\_embedded\_lo}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_embedded\_lo()}{configure\_embedded\_lo()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a8044156e4d3f0f7aafdaf600d4155e32} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+embedded\+\_\+lo (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tuning\+Method}{ = {\ttfamily \textquotesingle{}broadband\textquotesingle{}}, }\item[{}]{tuning\+Point}{ = {\ttfamily 401}, }\item[{}]{sweep\+Interval}{ = {\ttfamily 1}, }\item[{}]{span}{ = {\ttfamily 1e6}, }\item[{}]{if\+Bw}{ = {\ttfamily 10e3}, }\item[{}]{iterations}{ = {\ttfamily 5}, }\item[{}]{tolerance}{ = {\ttfamily 5}, }\item[{}]{enable}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the Embedded LO dialog for mixer measurements in Gain Compression Converters and Scalar Mixer Converter channels.
+
+Args:
+    tuningMethod (str): Chooses tuning method for embedded LO search. ['broadband', 'precise', 'none']
+    sweepInterval (int): Chooses how often to search for the LO in sweeps. [default is 1 sweep between each LO search]
+    tuningPoint (int): Selects which trace point is used to search for actual LO signal. [choose the center point, you'll have to know how many trace points you have]
+    span (float): Span in Hz for broadband LO search. [use a value that is at least as wide as the expected offset between expected and actual LO frequency, default is 1 MHz]
+    ifBw (float): Receiver IF bandwidth in Hz used for the LO search. [lower value reduces noise floor and slows down sweep, default is 10 kHz]
+    iterations (int): Maximum number of iterations to find LO. [default is 5]
+    tolerance (float): Minimum frequency offset in Hz between previous and current LO measurements for a stable measurement. [default is 5 Hz]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a593408775ecb7b3551fa7a34804a00ed}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_gca\_compression\_analysis@{configure\_gca\_compression\_analysis}}
+\index{configure\_gca\_compression\_analysis@{configure\_gca\_compression\_analysis}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_gca\_compression\_analysis()}{configure\_gca\_compression\_analysis()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a593408775ecb7b3551fa7a34804a00ed} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+gca\+\_\+compression\+\_\+analysis (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{cw\+Freq}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures compression analysis (underlying power sweep in GCA).
+
+Args:
+    measName (string): Specifies the measurement name.
+    cwFreq (float): Specifies cw frequency.
+    ch (int): Specifies the channel of the measurement. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a4097688033b1cad93ef682cda43eb2a0}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_gca\_frequency\_stimulus@{configure\_gca\_frequency\_stimulus}}
+\index{configure\_gca\_frequency\_stimulus@{configure\_gca\_frequency\_stimulus}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_gca\_frequency\_stimulus()}{configure\_gca\_frequency\_stimulus()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a4097688033b1cad93ef682cda43eb2a0} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+gca\+\_\+frequency\+\_\+stimulus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sweep\+Type}{ = {\ttfamily \textquotesingle{}linear\textquotesingle{}}, }\item[{}]{acq\+Mode}{ = {\ttfamily \textquotesingle{}smartsweep\textquotesingle{}}, }\item[{}]{num\+Points}{ = {\ttfamily 201}, }\item[{}]{start\+Freq}{ = {\ttfamily 1e9}, }\item[{}]{stop\+Freq}{ = {\ttfamily 2e9}, }\item[{}]{if\+Bw}{ = {\ttfamily 100e3}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure the settings in the frequency tab in Gain Compression setup.
+
+Args:
+    sweepType (str): Selects the type of stimulus sweep to use. 'linear' and 'logarithmic are with respect to frequency. ['linear', 'logarithmic', 'power', 'cw', 'phase', default is 'linear']
+    acqMode (str): Selects the acquisition mode used to capture power and frequency data. Smartsweep is significantly faster than the others. ['smartsweep', 'pfrequency', 'fpower', default is 'smartsweep']
+    numPoints (int): Number of sweep points to be used. [default is 201]
+    startFreq (float): Start frequency in Hz. [default is x]
+    stopFreq (float): Stop frequency in Hz. [default is x]
+    ifBw (float): IF bandwidth in Hz. [default is x]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ab35187fbf8d0ef684c39655e844b2f03}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_gca\_power\_stimulus@{configure\_gca\_power\_stimulus}}
+\index{configure\_gca\_power\_stimulus@{configure\_gca\_power\_stimulus}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_gca\_power\_stimulus()}{configure\_gca\_power\_stimulus()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ab35187fbf8d0ef684c39655e844b2f03} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+gca\+\_\+power\+\_\+stimulus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{input\+Port}{ = {\ttfamily 1}, }\item[{}]{output\+Port}{ = {\ttfamily 2}, }\item[{}]{linear\+Power}{ = {\ttfamily -\/30}, }\item[{}]{reverse\+Power}{ = {\ttfamily -\/20}, }\item[{}]{start\+Power}{ = {\ttfamily -\/30}, }\item[{}]{stop\+Power}{ = {\ttfamily -\/10}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure the settings in the power tab in Gain Compression Setup.
+
+Args:
+    inputPort (int): Selects which VNA port is connected to the DUT input. [1, 2, default is 1]
+    outputPort (int): Selects which VNA port is connected to the DUT output. [1, 2, default is 2]
+    linearPower (float): Sets the forward sweep power in dBm to be used to calculate the linear reference gain. [default is x]
+    reversePower (float): Sets the referse sweep power in dBm to be used to calculate the reverse s-parameters. [default is x]
+    startPower (float): Sets the start power in dBm used for the power sweep. [default is x]
+    stopPower (float): Sets the stop power in dBm used for the power sweep. [default is x]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a5e5c20e28ddb7153b6e65256857428ef}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_gca\_safe\_mode\_stimulus@{configure\_gca\_safe\_mode\_stimulus}}
+\index{configure\_gca\_safe\_mode\_stimulus@{configure\_gca\_safe\_mode\_stimulus}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_gca\_safe\_mode\_stimulus()}{configure\_gca\_safe\_mode\_stimulus()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a5e5c20e28ddb7153b6e65256857428ef} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+gca\+\_\+safe\+\_\+mode\+\_\+stimulus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{safe\+Mode}{ = {\ttfamily 0}, }\item[{}]{coarse\+Inc}{ = {\ttfamily 3}, }\item[{}]{fine\+Inc}{ = {\ttfamily 1}, }\item[{}]{thresh}{ = {\ttfamily 0.5}, }\item[{}]{limit}{ = {\ttfamily 20}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure the SMART Sweep Safe Mode settings in the compression tab in Gain Compression Setup.
+
+Args:
+    safeMode (int): Turns Safe Mode on or off. [0, 1, default is 0]
+    coarseInc (float): Sets the coarse power increment in dB that Safe Mode will use to increase the power. [default is 3 dB]
+    fineInc (float): Sets the fine power increment in dB that Safe Mode will use to increase the power when within "threshold" of the compression point. [default is 1 dB]
+    thresh (float): Sets the threshold in dB from the desired compression point at which Safe Mode will adjust the power from coarseInc to fineInc. [default is 0.5 dB]
+    limit (float): Sets the maximum power in dBm that Safe Mode will allow the VNA source to be set to. [default is 20 dBm]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a73cadd34a2e1b1195888c49197d17379}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_gcax\_frequency\_stimulus@{configure\_gcax\_frequency\_stimulus}}
+\index{configure\_gcax\_frequency\_stimulus@{configure\_gcax\_frequency\_stimulus}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_gcax\_frequency\_stimulus()}{configure\_gcax\_frequency\_stimulus()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a73cadd34a2e1b1195888c49197d17379} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+gcax\+\_\+frequency\+\_\+stimulus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sweep\+Type}{ = {\ttfamily \textquotesingle{}linear\textquotesingle{}}, }\item[{}]{acq\+Mode}{ = {\ttfamily \textquotesingle{}smartsweep\textquotesingle{}}, }\item[{}]{num\+Points}{ = {\ttfamily 201}, }\item[{}]{start\+Freq}{ = {\ttfamily 1e9}, }\item[{}]{stop\+Freq}{ = {\ttfamily 2e9}, }\item[{}]{if\+Bw}{ = {\ttfamily 100e3}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Passthrough method for clarity.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a30123f6a96b7a0078d0f9da832043630}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_gcax\_power\_stimulus@{configure\_gcax\_power\_stimulus}}
+\index{configure\_gcax\_power\_stimulus@{configure\_gcax\_power\_stimulus}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_gcax\_power\_stimulus()}{configure\_gcax\_power\_stimulus()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a30123f6a96b7a0078d0f9da832043630} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+gcax\+\_\+power\+\_\+stimulus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{input\+Port}{ = {\ttfamily 1}, }\item[{}]{output\+Port}{ = {\ttfamily 2}, }\item[{}]{linear\+Power}{ = {\ttfamily -\/30}, }\item[{}]{reverse\+Power}{ = {\ttfamily -\/20}, }\item[{}]{start\+Power}{ = {\ttfamily -\/30}, }\item[{}]{stop\+Power}{ = {\ttfamily -\/10}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Passthrough method for clarity.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a28919a5898ba60c82500ea84edd7ca58}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_gcax\_safe\_mode\_stimulus@{configure\_gcax\_safe\_mode\_stimulus}}
+\index{configure\_gcax\_safe\_mode\_stimulus@{configure\_gcax\_safe\_mode\_stimulus}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_gcax\_safe\_mode\_stimulus()}{configure\_gcax\_safe\_mode\_stimulus()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a28919a5898ba60c82500ea84edd7ca58} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+gcax\+\_\+safe\+\_\+mode\+\_\+stimulus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{safe\+Mode}{ = {\ttfamily 0}, }\item[{}]{coarse\+Inc}{ = {\ttfamily 3}, }\item[{}]{fine\+Inc}{ = {\ttfamily 1}, }\item[{}]{thresh}{ = {\ttfamily 0.5}, }\item[{}]{limit}{ = {\ttfamily 20}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Passthrough method for clarity.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a7be9c96252d36b67b50264c32ecfdd1c}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_limit\_segment@{configure\_limit\_segment}}
+\index{configure\_limit\_segment@{configure\_limit\_segment}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_limit\_segment()}{configure\_limit\_segment()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a7be9c96252d36b67b50264c32ecfdd1c} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+limit\+\_\+segment (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{segment\+Num}{, }\item[{}]{x\+Start}{ = {\ttfamily 10e6}, }\item[{}]{x\+Stop}{ = {\ttfamily 1e9}, }\item[{}]{y\+Start}{ = {\ttfamily -\/20}, }\item[{}]{y\+Stop}{ = {\ttfamily -\/20}, }\item[{}]{limit\+Type}{ = {\ttfamily \textquotesingle{}lmin\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cofigures a single limit line segment for a trace. If creating a complex set of limit lines, this method must be called more than once for each trace.
+
+Args:
+    measName (str): Name of trace to which limit line is applied.
+    segmentNum (int): Limit segment number.
+    xStart (float): X-axis start value for limit segment.
+    xStop (float): X-axis stop value for limit segment.
+    yStart (float): Y-axis start value for limit segment.
+    yStop (float): Y-axis stop value for limit segment.
+    limitType (str): Type of test the limit checks. 'lmin' will pass a trace with values ABOVE yStart and yStop. 'lmax' will pass a trace with values BELOW yStart and yStop. ['lmin', 'lmax']
+    ch (int): Channel to which the limit is applied.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a46c1767b69bf67f224da5cddd5bb4468}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_limit\_test@{configure\_limit\_test}}
+\index{configure\_limit\_test@{configure\_limit\_test}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_limit\_test()}{configure\_limit\_test()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a46c1767b69bf67f224da5cddd5bb4468} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+limit\+\_\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{limit\+State}{ = {\ttfamily 1}, }\item[{}]{limit\+Display}{ = {\ttfamily 1}, }\item[{}]{limit\+Sound}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures a limit test.
+
+Args:
+    measName (str): Name of trace to which limit line is applied.
+    limitState (int): 1=limit test on, 0=limit test off
+    limitDisplay (int): 1=limit line displayed, 0=limit line hidden
+    limitSound (int): 1=limit test beeps on failure, 0=no sound on limit test failure
+    ch (int): Channel to which the limit is applied.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aafdcc6397fdab1b47bff6e91e51b17db}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mixer\_frequency@{configure\_mixer\_frequency}}
+\index{configure\_mixer\_frequency@{configure\_mixer\_frequency}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mixer\_frequency()}{configure\_mixer\_frequency()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aafdcc6397fdab1b47bff6e91e51b17db} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mixer\+\_\+frequency (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start\+Freq}{ = {\ttfamily 3e9}, }\item[{}]{stop\+Freq}{ = {\ttfamily 3.5e9}, }\item[{}]{lo\+Freq}{ = {\ttfamily 2.5e9}, }\item[{}]{sideband}{ = {\ttfamily \textquotesingle{}low\textquotesingle{}}, }\item[{}]{input\+Greater}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures input start/stop frequency, LO fixed frequency, and output sideband
+and calculates output start/stop frequency in Gain Compression Converters and 
+Scalar Mixer Converter channels.
+
+Args:
+    startFreq (float): Start frequency of DUT input. [default is x]
+    stopFreq (float): Stop frequency of DUT input. [default is x]
+    sideband (str): Selects which converter sideband to use. ['low', 'high', default is 'low']
+    inputGreater (int): Tells VNA if DUT is a downconverter (input freq greater than LO) or an upconverter (input freq less than LO). [0, 1, default is 1]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ab99ba7dbbf587076b1745410190bcfe3}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_acpevm\_meas@{configure\_mod\_acpevm\_meas}}
+\index{configure\_mod\_acpevm\_meas@{configure\_mod\_acpevm\_meas}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_acpevm\_meas()}{configure\_mod\_acpevm\_meas()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ab99ba7dbbf587076b1745410190bcfe3} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+acpevm\+\_\+meas (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{offset\+Freq}{ = {\ttfamily 0}, }\item[{}]{integ\+Bw}{ = {\ttfamily 100e6}, }\item[{}]{acp\+Lo\+Freq}{ = {\ttfamily -\/100e6}, }\item[{}]{acp\+Lo\+Integ\+Bw}{ = {\ttfamily 100e6}, }\item[{}]{acp\+Up\+Freq}{ = {\ttfamily 100e6}, }\item[{}]{acp\+Up\+Integ\+Bw}{ = {\ttfamily 100e6}, }\item[{}]{autofill}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the Measure tab as an ACP and EVM measurement in Modulation Distortion.
+
+Args:
+    offsetFreq (float): Offset of the modulated signal in Hz from the carrier frequency. [default is 0]
+    integBw (float): Bandwidth of the modulated signal in Hz. [default is x]
+    acpLoFreq (float): Offset in Hz from the center of the main channel to the center of the low side adjacent channel. [default is x]
+    acpLoIntegBw (float): Bandwidth of the low side adjacent channel. [default is x]
+    acpUpFreq (float): Offset in Hz from the center of the main channel to the center of the high side adjacent channel. [default is x]
+    acpUpIntegBw (float): Bandwidth of the high side adjacent channel. [default is x]
+    autoFill (int): Specifies whether to autofill all parameters based on information in .mdx file. [0, 1, default is 1]
+    ch (int): Channel in which the modulation measurement will be configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a69d1eb671802b5ce07516edaaad07ee0}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_create\_compact\_mdx@{configure\_mod\_create\_compact\_mdx}}
+\index{configure\_mod\_create\_compact\_mdx@{configure\_mod\_create\_compact\_mdx}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_create\_compact\_mdx()}{configure\_mod\_create\_compact\_mdx()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a69d1eb671802b5ce07516edaaad07ee0} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+create\+\_\+compact\+\_\+mdx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{original\+File\+Name}{ = {\ttfamily \textquotesingle{}C\+:/Users/Public/Documents/Network~Analyzer/iq.csv\textquotesingle{}}, }\item[{}]{sample\+Rate}{ = {\ttfamily 0}, }\item[{}]{span}{ = {\ttfamily 0}, }\item[{}]{tone\+Spacing}{ = {\ttfamily 0}, }\item[{}]{num\+Tones}{ = {\ttfamily 0}, }\item[{}]{carr\+Offset}{ = {\ttfamily 0}, }\item[{}]{dac\+Scaling}{ = {\ttfamily 70}, }\item[{}]{enable\+Optimizer}{ = {\ttfamily 1}, }\item[{}]{file\+Name}{ = {\ttfamily \textquotesingle{}C\+:/Users/Public/Documents/Network~Analyzer/compact.mdx\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates and saves a compact waveform mdx file.
+
+Args:
+    originalFileName (str): Full absolute path to the file that contains the original waveform to be compacted. [default is x]
+    sampleRate (float): Sample rate in samples/sec of original waveform file. [default is x]
+    toneSpacing (float): Tone spacing in Hz of the compact signal. [default is x]
+    numTones (int): Number of tones in the compact signal. [default is x]
+    carrOffset (float): Offset in Hz from specified carrier frequency. [default is 0]
+    dacScaling (int): Unitless scaling factor used to ensure DAC filter doesn't output a signal larger than maximum output level. Setting to 100 will usually cause excessive distortion [1-100, default is 70]
+    enableOptimizer (int): Determines whether to enable signal optimizer, which improves the harmonics and images of signal. [0, 1, default is 1]
+    fileName (str): Full absolute path to the file that will contain the generated compact waveform. [default is x]
+    ch (int): Channel for which the waveform is created. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aeba708882483ea60a0c315c62fb89c6e}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_create\_mtone\_mdx@{configure\_mod\_create\_mtone\_mdx}}
+\index{configure\_mod\_create\_mtone\_mdx@{configure\_mod\_create\_mtone\_mdx}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_create\_mtone\_mdx()}{configure\_mod\_create\_mtone\_mdx()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aeba708882483ea60a0c315c62fb89c6e} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+create\+\_\+mtone\+\_\+mdx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{span}{ = {\ttfamily 100e6}, }\item[{}]{tone\+Spacing}{ = {\ttfamily 100e3}, }\item[{}]{num\+Tones}{ = {\ttfamily 1001}, }\item[{}]{carr\+Offset}{ = {\ttfamily 0}, }\item[{}]{phase\+Type}{ = {\ttfamily \textquotesingle{}random\textquotesingle{}}, }\item[{}]{dac\+Scaling}{ = {\ttfamily 70}, }\item[{}]{enable\+Optimizer}{ = {\ttfamily 0}, }\item[{}]{file\+Name}{ = {\ttfamily \textquotesingle{}C\+:/Users/Public/Documents/Network~Analyzer/multitone.mdx\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates and saves a multitone stimulus mdx file.
+
+Args:
+    span (float): Multitone signal span in Hz. [default is x]
+    toneSpacing (float): Spacing in Hz between the tones in multitone signal. [default is x]
+    numTones (int): Number of tones in multitone signal. [default is 1001]
+    carrOffset (float): Offset in Hz from specified carrier frequency. [default is 0]
+    phaseType (str): Phase relationship between tones in multitone signal. ['random', 'fixed', 'parabolic', default is 'random']
+    dacScaling (int): Unitless scaling factor used to ensure DAC filter doesn't output a signal larger than maximum output level. Setting to 100 will usually cause excessive distortion [1-100, default is 70]
+    enableOptimizer (int): Determines whether to enable signal optimizer, which improves the harmonics and images of signal. [0, 1, default is 0]
+    fileName (str): Full absolute path to the file that will contain the generated multitone waveform. [default is x]
+    ch (int): Channel for which the waveform is created. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ab49561dd1a2ce718b0707da171c51ca8}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_evm\_meas@{configure\_mod\_evm\_meas}}
+\index{configure\_mod\_evm\_meas@{configure\_mod\_evm\_meas}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_evm\_meas()}{configure\_mod\_evm\_meas()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ab49561dd1a2ce718b0707da171c51ca8} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+evm\+\_\+meas (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{offset\+Freq}{ = {\ttfamily 0}, }\item[{}]{integ\+Bw}{ = {\ttfamily 100e6}, }\item[{}]{autofill}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the Measure tab as an EVM measurement in Modulation Distortion.
+
+Args:
+    offsetFreq (float): Offset of the modulated signal in Hz from the carrier frequency. [default is 0]
+    integBw (float): Bandwidth of the modulated signal in Hz. [default is x]
+    autoFill (int): Specifies whether to autofill all parameters based on information in .mdx file. [0, 1, default is 1]
+    ch (int): Channel in which the modulation measurement will be configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a6d96f3667370282edf6fe947dd06b275}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_meas\_details@{configure\_mod\_meas\_details}}
+\index{configure\_mod\_meas\_details@{configure\_mod\_meas\_details}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_meas\_details()}{configure\_mod\_meas\_details()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a6d96f3667370282edf6fe947dd06b275} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+meas\+\_\+details (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{eq\+Aperture\+Auto}{ = {\ttfamily 1}, }\item[{}]{eq\+Aperture}{ = {\ttfamily 15e6}, }\item[{}]{anti\+Alias\+Filter}{ = {\ttfamily \textquotesingle{}auto\textquotesingle{}}, }\item[{}]{evm\+Norm}{ = {\ttfamily 1.0}, }\item[{}]{mod\+Filter}{ = {\ttfamily \textquotesingle{}none\textquotesingle{}}, }\item[{}]{mod\+Filter\+Alpha}{ = {\ttfamily 0.35}, }\item[{}]{sym\+Rate\+Auto}{ = {\ttfamily 1}, }\item[{}]{sym\+Rate}{ = {\ttfamily 200e6}, }\item[{}]{dut\+Nf}{ = {\ttfamily 0}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the Measurement Details dialog under the Measure tab in Modulation Distortion.
+
+Args:
+    eqApertureAuto (int): Determine whether to automatically set the distortion aperture window size. [0, 1, default is 1]
+    eqAperture (float): Window span in Hz used to model the DUT's gain and distortion. Unused if eqApertureAuto is 1. [default is x]
+    antiAliasFilter (str): Select the anti aliasing filter used to remove aliasing in the distortion tone measurements. ['auto', 'wide', 'narrow', default is 'auto']
+    evmNorm (float): Sets the scaling factor applied to the EVM measurements. [0.1-1.0, default is 1.0]
+    modFilter (str): Chooses pulse shaping filter applied to the modulated signal measurement. ['none', 'rrc', default is 'none']
+    modFilterAlpha (float): Unitless rolloff factor for pulse shaping filter. [0.1-1.0, default is x]
+    symRateAuto (int): Determine whether to automatically choose pulse shaping filter symbol rate. [0, 1, default is 1]
+    symRate (float): Sets the symbol rate in sym/sec of pulse shaping filter. Ignored if symRateAuto is 1. [default is x]
+    dutNf (float): Sets the estimated noise figure in dB of DUT to be included in distortion measurement. [default is x]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a80c611122b1d98ffc24503f5db409ff1}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_modulate@{configure\_mod\_modulate}}
+\index{configure\_mod\_modulate@{configure\_mod\_modulate}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_modulate()}{configure\_mod\_modulate()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a80c611122b1d98ffc24503f5db409ff1} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+modulate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{source\+Name}{ = {\ttfamily \textquotesingle{}VXT\textquotesingle{}}, }\item[{}]{mod\+File}{ = {\ttfamily \textquotesingle{}C\+:\textbackslash{}\textbackslash{}Users\textbackslash{}\textbackslash{}Instrument\textbackslash{}\textbackslash{}Desktop\textbackslash{}\textbackslash{}example.mdx\textquotesingle{}}, }\item[{}]{enable\+Mod}{ = {\ttfamily 1}, }\item[{}]{enable\+Src\+Corr}{ = {\ttfamily 0}, }\item[{}]{enable\+Lo\+Feedthru}{ = {\ttfamily 0}, }\item[{}]{reset}{ = {\ttfamily 0}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures modulation source, file, and source correction state.
+
+Args:
+    sourceName (str): User-specified name of the source to be used. [default is 'VXT']
+    modFile (str): Full absolute location of .mdx file to be loaded. [default is x]
+    enableMod (int): Enables or disables modulated signal playback. [0, 1, default is 1]
+    enableSrcCorr (int): Enables or disables source correction in the loaded file. [0, 1, default is 0]
+    enableLoFeedThru (int): Enables or disables LO feedthrough correction in the loaded file. [0, 1, default is 0]
+    ch (int): Channel for which settings are configured. [default is 1]            
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a7347b3d00f7b8e45e93d4b5a5be8d006}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_rfpath@{configure\_mod\_rfpath}}
+\index{configure\_mod\_rfpath@{configure\_mod\_rfpath}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_rfpath()}{configure\_mod\_rfpath()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a7347b3d00f7b8e45e93d4b5a5be8d006} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+rfpath (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{src\+Atten}{ = {\ttfamily 0}, }\item[{}]{include\+Src\+Atten}{ = {\ttfamily 1}, }\item[{}]{input\+Port}{ = {\ttfamily 1}, }\item[{}]{output\+Port}{ = {\ttfamily 2}, }\item[{}]{recv\+Atten}{ = {\ttfamily 0}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the RF Path tab in Modulation Distortion.
+
+Args:
+    srcAtten (int): Source attenuation in dB. [0, 10, 20, 30, 40, default is 0]
+    includeSrcAtten (int): Specifies whether to include source attenuation in power calculations. [0, 1, default is 1]
+    inputPort (int): Specifies which VNA port corresponds to DUT input port. [1, 2, default is 1]
+    outputPort (int): Specifies which VNA port corresponds to DUT output port. [1, 2, default is 2]
+    recvAtten (int): Receiver attenuation in dB. [0, 10, 20, 30, 40, default is 0]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a9e52bd618c6e00392155f5bd5601659d}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_source\_cal@{configure\_mod\_source\_cal}}
+\index{configure\_mod\_source\_cal@{configure\_mod\_source\_cal}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_source\_cal()}{configure\_mod\_source\_cal()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a9e52bd618c6e00392155f5bd5601659d} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+source\+\_\+cal (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cal\+Type}{ = {\ttfamily \textquotesingle{}power\textquotesingle{}}, }\item[{}]{max\+Iterations}{ = {\ttfamily 3}, }\item[{}]{desired\+Tolerance}{ = {\ttfamily 0.1}, }\item[{}]{cal\+Span}{ = {\ttfamily 100e6}, }\item[{}]{guard\+Band}{ = {\ttfamily 0}, }\item[{}]{port}{ = {\ttfamily 1}, }\item[{}]{enable\+Cal}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures a single calibration type in the Source Cal menu in the Modualate tab in Modulation Distortion.
+!!! If multiple calibration types are desired (for examle equalization and power), this method must be used once for each calibration type. 
+
+Args:
+    calType (str): Type of calibration to perform. ['power', 'equalization', 'distortion', 'acp', default is 'power']
+    maxIterations (int): Maximum number of iterations to perform correction. [default is 3]
+    desiredTolerance (float): Desired correction level in dB/dB-pk-pk/dBc for power/equalization/acp. [default is 0.1]
+    calSpan (float): Span in Hz over which to perform calibration. [default is x]
+    guardBand (float): Frequency gap in Hz between main and adjacent channel calibrations. [default is 0]
+    port (int): DUT port at which calibration will be performed. [1, 2, default is 1]
+    enableCal (int): Enables or disables a given calibration row. [0, 1, default is 1]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ace31400206c74c57cd06af5118558c13}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_source\_cal\_details@{configure\_mod\_source\_cal\_details}}
+\index{configure\_mod\_source\_cal\_details@{configure\_mod\_source\_cal\_details}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_source\_cal\_details()}{configure\_mod\_source\_cal\_details()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ace31400206c74c57cd06af5118558c13} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+source\+\_\+cal\+\_\+details (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{enable\+Fast\+Cal}{ = {\ttfamily 0}, }\item[{}]{rf\+Power\+Type}{ = {\ttfamily \textquotesingle{}fixed\textquotesingle{}}, }\item[{}]{power}{ = {\ttfamily -\/30}, }\item[{}]{rf\+Carrier\+Type}{ = {\ttfamily \textquotesingle{}fixed\textquotesingle{}}, }\item[{}]{freq}{ = {\ttfamily 1e9}, }\item[{}]{stop\+Power}{ = {\ttfamily -\/20}, }\item[{}]{stop\+Freq}{ = {\ttfamily 2e9}, }\item[{}]{power\+Points}{ = {\ttfamily 11}, }\item[{}]{freq\+Points}{ = {\ttfamily 11}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures everything in the Mod Cal Details submenu within the Source Cal menu in the Modulate tab in Modulation Distortion. Wow.
+
+Args:
+    enableFastCal (int): Enables or disables fast cal with reduced accuracy. [0, 1, default is 0]
+    rfPowerType (str): Chooses type of power sweep over which cal is performed. ['fixed', 'swept', default is 'fixed']
+    power (float): Power in dBm at which the calibration is performed. Also used as the start power if power is swept. [default is x]
+    rfCarrierType (str): Chooses type of frequency sweep over which the cal is performed. ['fixed', 'swept', defaults is 'fixed']
+    freq (float): Frequency in Hz at which the calibration is performed. Also used as the start frequency if frequency is swept. [default is x]
+    stopPower (float): Stop power in dBm used to define the end of a power sweep. Unused if power type is 'fixed' [default is x]
+    stopFrequency (float): Stop frequency in Hz used to define the end of a frequency sweep. Unused if frequency type is 'fixed' [default is x]
+    powerPoints (int): Number of points to include in the power sweep. Unused if power type is 'fixed' [default is x] 
+    freqPoints (int): Number of points to include in the frequency sweep. Unused if frequency type is 'fixed' [default is x]
+    ch (int): Channel for which the source correction details are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a50891e5883883fc56ab8314d1061f5d8}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_mod\_sweep@{configure\_mod\_sweep}}
+\index{configure\_mod\_sweep@{configure\_mod\_sweep}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_mod\_sweep()}{configure\_mod\_sweep()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a50891e5883883fc56ab8314d1061f5d8} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+mod\+\_\+sweep (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sweep\+Type}{ = {\ttfamily \textquotesingle{}fixed\textquotesingle{}}, }\item[{}]{center\+Freq}{ = {\ttfamily 1e9}, }\item[{}]{span}{ = {\ttfamily 300e6}, }\item[{}]{noise\+Bw}{ = {\ttfamily 200}, }\item[{}]{power}{ = {\ttfamily -\/30}, }\item[{}]{power\+Context}{ = {\ttfamily \textquotesingle{}din1\textquotesingle{}}, }\item[{}]{start\+Power}{ = {\ttfamily -\/20}, }\item[{}]{stop\+Power}{ = {\ttfamily -\/10}, }\item[{}]{power\+Points}{ = {\ttfamily 11}, }\item[{}]{auto\+Increase\+Noise\+Bw}{ = {\ttfamily 0}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the Sweep tab in Modulation Distortion Setup.
+
+Args:
+    sweepType (str): Type of sweep, fixed frequency or power. ['fixed', 'power', default is 'fixed]
+    centerFreq (float): Center frequency in Hz for the modulation distortion measurement. [default is x]
+    span (float): Span in Hz for the modulation distortion measurement. [default is x]
+    power (float): Power in dBm for the modulation distortion measurement. [default is x]
+    powerContext (str): Specifies at which DUT port the specified power should be applied. ['din1', 'dout2', default is 'din1']
+    startPower (float): Start power for power sweep types. Ignored for 'fixed' sweepType. [default is x]
+    stopPower (float): Stop power for power sweep types. Ignored for 'fixed' sweepType. [default is x]
+    powerPoints (int): Specifies how many points to include in the power sweep. Ignored for 'fixed' sweepType. [default is 11]
+    autoIncreaseNoiseBw (int): Specifies whether to automatically increase noise bandwidth as power increases in power sweeps. Ignored for 'fixed' sweepType. [0, 1, default is 0]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a665f1bb0cf1dd033a4fb68da88822bea}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_modx\_embedded\_lo@{configure\_modx\_embedded\_lo}}
+\index{configure\_modx\_embedded\_lo@{configure\_modx\_embedded\_lo}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_modx\_embedded\_lo()}{configure\_modx\_embedded\_lo()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a665f1bb0cf1dd033a4fb68da88822bea} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+modx\+\_\+embedded\+\_\+lo (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tuning\+Method}{ = {\ttfamily \textquotesingle{}broadband\textquotesingle{}}, }\item[{}]{sweep\+Interval}{ = {\ttfamily 1}, }\item[{}]{span}{ = {\ttfamily 3e6}, }\item[{}]{noise\+Bw}{ = {\ttfamily 10e3}, }\item[{}]{iterations}{ = {\ttfamily 5}, }\item[{}]{tolerance}{ = {\ttfamily 5}, }\item[{}]{enable}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the embedded LO dialog for mixer measurements in Modulation Distortion Converters.
+
+Args:
+    tuningMethod (str): Chooses tuning method for embedded LO search. ['broadband', 'precise', 'none', default is 'broadband']
+    sweepInterval (int): Chooses how often to search for the LO in sweeps. [default is 1 sweep between each LO search]
+    span (float): Span in Hz for broadband LO search. [use a value that is at least as wide as the expected offset between expected and actual LO frequency, default is 3 MHz]
+    noiseBw (float): Receiver IF bandwidth in Hz used for the LO search. [lower value reduces noise floor and slows down sweep, default is 10 kHz]
+    iterations (int): Maximum number of iterations to find LO. [default is 5]
+    tolerance (float): Minimum frequency offset in Hz between previous and current LO measurements for a stable measurement. [default is 5 Hz]
+    enable (int): Enables or disables embedded LO. [0, 1, default is 1]
+    ch (int): Channel for which embedded LO is configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a1c47e22a375ad406718765e0e466234e}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_modx\_mixer@{configure\_modx\_mixer}}
+\index{configure\_modx\_mixer@{configure\_modx\_mixer}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_modx\_mixer()}{configure\_modx\_mixer()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a1c47e22a375ad406718765e0e466234e} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+modx\+\_\+mixer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{lo\+Freq}{ = {\ttfamily 1e9}, }\item[{}]{sideband}{ = {\ttfamily \textquotesingle{}low\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the LO frequency and mixer sideband for mixer measurements in Modulation Distortion Converters.
+
+Args:
+    loFreq (float): LO frequency of the DUT in Hz. [default is x]
+    sideband (str): Selects which mixer sideband the VNA will use for measurement. ['low', 'high', default is 'low']
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a8187c85fd43eed21e76fbac7cab2b80f}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_modx\_rfpath@{configure\_modx\_rfpath}}
+\index{configure\_modx\_rfpath@{configure\_modx\_rfpath}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_modx\_rfpath()}{configure\_modx\_rfpath()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a8187c85fd43eed21e76fbac7cab2b80f} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+modx\+\_\+rfpath (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{src\+Atten}{ = {\ttfamily 0}, }\item[{}]{include\+Src\+Atten}{ = {\ttfamily 1}, }\item[{}]{input\+Port}{ = {\ttfamily 1}, }\item[{}]{output\+Port}{ = {\ttfamily 2}, }\item[{}]{recv\+Atten}{ = {\ttfamily 0}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the RF Path tab in Modulation Distortion Converters.
+
+Args:
+    srcAtten (int): Source attenuation in dB. [0, 10, 20, 30, 40, default is 0]
+    includeSrcAtten (int): Specifies whether to include source attenuation in power calculations. [0, 1, default is 1]
+    inputPort (int): Specifies which VNA port corresponds to DUT input port. [1, 2, default is 1]
+    outputPort (int): Specifies which VNA port corresponds to DUT output port. [1, 2, default is 2]
+    recvAtten (int): Receiver attenuation in dB. [0, 10, 20, 30, 40, default is 0]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a01580887c5c01721f6e3a62dd246dc69}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_nf\_frequency@{configure\_nf\_frequency}}
+\index{configure\_nf\_frequency@{configure\_nf\_frequency}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_nf\_frequency()}{configure\_nf\_frequency()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a01580887c5c01721f6e3a62dd246dc69} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+nf\+\_\+frequency (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sweep\+Type}{ = {\ttfamily \textquotesingle{}linear\textquotesingle{}}, }\item[{}]{num\+Points}{ = {\ttfamily 41}, }\item[{}]{start\+Freq}{ = {\ttfamily 10e6}, }\item[{}]{stop\+Freq}{ = {\ttfamily 44e9}, }\item[{}]{if\+Bw}{ = {\ttfamily 1e3}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure the settings in the frequency tab in Noise Figure setup.
+
+Args:
+    sweepType (str): Selects the type of stimulus sweep to use. 'linear' and 'logarithmic are with respect to frequency. ['linear', 'logarithmic', 'power', 'cw', 'phase', default is 'linear']
+    numPoints (int): Number of sweep points to be used. [default is 411]
+    startFreq (float): Start frequency in Hz. [default is 10e6]
+    stopFreq (float): Stop frequency in Hz. [default is 44e9]
+    ifBw (float): IF bandwidth in Hz. [default is 1e3]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_adf9fe9ad85e63f6e7281f7bd398e6de7}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_nf\_noise\_figure@{configure\_nf\_noise\_figure}}
+\index{configure\_nf\_noise\_figure@{configure\_nf\_noise\_figure}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_nf\_noise\_figure()}{configure\_nf\_noise\_figure()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_adf9fe9ad85e63f6e7281f7bd398e6de7} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+nf\+\_\+noise\+\_\+figure (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{noise\+Bw}{ = {\ttfamily 4e6}, }\item[{}]{avg\+State}{ = {\ttfamily 1}, }\item[{}]{avg\+Num}{ = {\ttfamily 100}, }\item[{}]{receiver\+Gain}{ = {\ttfamily 30}, }\item[{}]{source\+Temp}{ = {\ttfamily 297}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure the settings in the noise figure tab in Noise Figure setup.
+
+Args:
+    noiseBw (float): Bandwidth of the noise receiver. [default is 4e6]
+    avgState (int): 0 turns averaging off. 1 turns averaging on. [default is 1]
+    avgNum (int): Number of averages. [default is 100]
+    receiverGain (int): Sets noise receiver gain. [0, 15, 30, default is 30]
+    sourceTemp (int): Ambient temperature at which the noise measurement is occurring. [default is 297]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a9ea1facc074f533d22a67bb29ce8e821}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_nf\_power@{configure\_nf\_power}}
+\index{configure\_nf\_power@{configure\_nf\_power}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_nf\_power()}{configure\_nf\_power()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a9ea1facc074f533d22a67bb29ce8e821} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+nf\+\_\+power (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{input\+Port}{ = {\ttfamily 1}, }\item[{}]{output\+Port}{ = {\ttfamily 2}, }\item[{}]{power}{ = {\ttfamily -\/20}, }\item[{}]{reverse\+Power}{ = {\ttfamily -\/20}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure the settings in the power tab in Noise Figure Setup.
+
+Args:
+    inputPort (int): Selects which VNA port is connected to the DUT input. [1, 2, default is 1]
+    outputPort (int): Selects which VNA port is connected to the DUT output. [1, 2, default is 2]
+    power (float): Sets the forward sweep power in dBm to be used to calculate the DUT gain. [default is x]
+    reversePower (float): Sets the referse sweep power in dBm to be used to calculate the reverse s-parameters. [default is x]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_af9cc3839a97eacc3e50824864462568a}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_power\_offset@{configure\_power\_offset}}
+\index{configure\_power\_offset@{configure\_power\_offset}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_power\_offset()}{configure\_power\_offset()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_af9cc3839a97eacc3e50824864462568a} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+power\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{port}{ = {\ttfamily 1}, }\item[{}]{power\+Offset}{ = {\ttfamily 0}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}!!! THIS METHOD SHOULD BE USED BEFORE CONFIGURING POWER STIMULUS SETTINGS !!!
+Configures a power offset for a given port in a given channel. 
+Positive values correspond to gain in the path, negative values correspond to loss in the path.
+
+Args:
+    port (int): Port number to which power offset will be applied. [1,2] default is 1.
+    powerOffset (float): Power offset in dB that will be applied. Default is 0.
+    ch (int): Channel for which power offset will be applied. Default is 1.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a5346e33b688aedfb4a76f5d657a68214}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_receiver\_gain@{configure\_receiver\_gain}}
+\index{configure\_receiver\_gain@{configure\_receiver\_gain}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_receiver\_gain()}{configure\_receiver\_gain()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a5346e33b688aedfb4a76f5d657a68214} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+receiver\+\_\+gain (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{source\+Port}{ = {\ttfamily 1}, }\item[{}]{receiever\+Port}{ = {\ttfamily 2}, }\item[{}]{gain}{ = {\ttfamily \textquotesingle{}auto\textquotesingle{}}, }\item[{}]{gain\+Coupling}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}!!! NOT compatible with PNA or PNA-X. !!!
+!!! NOT compatible with Modulation Distortion or Spectrum Analyzer modes. !!!
+Configures the gain settings for a selected VNA source and receiver port. 
+
+Args:
+    sourcePort (int): Reference source port for which receiver gain is specified. [1, 2, default is 1]
+    receiverPort (int): Receiver port for which receiver gain is specified. [1, 2, default is 2]
+    gain (str): Receiver gain. ['auto', 'low', 'high', default is 'auto']
+    gainCoupling (int): Turns gain coupling on or off. [0, 1, default is 1]
+    ch (int): Channel for which receiver gain is configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aef088a3a0f2a64e40426ac86f9029b8d}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_receiver\_leveling@{configure\_receiver\_leveling}}
+\index{configure\_receiver\_leveling@{configure\_receiver\_leveling}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_receiver\_leveling()}{configure\_receiver\_leveling()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aef088a3a0f2a64e40426ac86f9029b8d} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+receiver\+\_\+leveling (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{port}{ = {\ttfamily 1}, }\item[{}]{leveling\+Receiver}{ = {\ttfamily \textquotesingle{}r1\textquotesingle{}}, }\item[{}]{leveling\+Type}{ = {\ttfamily \textquotesingle{}presweep\textquotesingle{}}, }\item[{}]{max\+Power}{ = {\ttfamily 0}, }\item[{}]{min\+Power}{ = {\ttfamily -\/100}, }\item[{}]{leveling\+Tolerance}{ = {\ttfamily 0.1}, }\item[{}]{leveling\+Max\+Iterations}{ = {\ttfamily 5}, }\item[{}]{enable\+Leveling}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures everything in the receiver leveling setup dialog for ONE port. Must be repeated for additional ports.
+
+Args:
+    port (int): Port to which receiver leveling is applied. [1, 2, 3, 4, default is 1]
+    levelingReceiver (str): Receiver to be used for leveling. [see validReceivers, default is 'a1']
+    levelingType (str): Type of leveling to perform, before or during sweep. ['presweep', 'point', default is 'presweep']
+    maxPower (float): Maximum power limit in dBm of the source being leveled. [default is x]
+    minPower (float): Minimum power limit in dBm of the source being leveled. [default is x]
+    levelingTolerance (float): Tolerance in dB to define if the source is leveled. [default is 0.1]
+    levelingMaxIterations (int): Maximum iterations to attempt leveling. [default is 5]
+    enableLeveling (int): Enables or disables receiver leveling. [0, 1, default is 1]
+    ch (int): Channel for which receiver leveling is enabled. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a06a734a26a125aca98e3f757aa71f4b5}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_receiver\_path@{configure\_receiver\_path}}
+\index{configure\_receiver\_path@{configure\_receiver\_path}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_receiver\_path()}{configure\_receiver\_path()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a06a734a26a125aca98e3f757aa71f4b5} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+receiver\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{receiver}{ = {\ttfamily \textquotesingle{}b2\textquotesingle{}}, }\item[{}]{rf\+In\+Switch}{ = {\ttfamily \textquotesingle{}auto\textquotesingle{}}, }\item[{}]{rf\+Attenuation}{ = {\ttfamily 18}, }\item[{}]{if\+Gain}{ = {\ttfamily \textquotesingle{}auto\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}!!! Only compatible with E5081A ENA-X and M983xA Configurable PXIe VNAs. !!!
+Configures the RF In Switch, RF Attenuator, and IF Gain settings for a selected VNA receiver. 
+
+Args:
+    receiver (str): Receiver for which path is specified. ['a1', 'b1', 'a2', 'b2', default is b2]
+    rfInSwitch (str): Switch path for receiver. ['auto', 'internal', 'external', 'bypass20ghz', 'bypass44ghz', 'bypassauto', default is 'auto']
+    rfAttenuation (int): Attenuation value for receiver. [0-30 in increments of 2, default is 18]
+    ifGain (str/int): Receiver gain. ['auto' or 6-26 in increments of 2, default is 'auto']
+    gainCoupling (int): Turns gain coupling off or on. [0, 1, defaults is 0]
+    ch (int): Channel for which receiver path is configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a9c308e5e1270354d45500063dd52db89}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_sa\_band\_power\_marker@{configure\_sa\_band\_power\_marker}}
+\index{configure\_sa\_band\_power\_marker@{configure\_sa\_band\_power\_marker}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_sa\_band\_power\_marker()}{configure\_sa\_band\_power\_marker()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a9c308e5e1270354d45500063dd52db89} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+sa\+\_\+band\+\_\+power\+\_\+marker (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mkr\+Num}{, }\item[{}]{meas\+Name}{, }\item[{}]{mkr\+Center\+Freq}{ = {\ttfamily 1e9}, }\item[{}]{span}{ = {\ttfamily 1e6}, }\item[{}]{band\+Power\+State}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures marker for band power SA analysis.
+
+Args:
+    mkrNum (int): Marker number. [0-15]
+    measName (str): Name of the measurement for which the marker will be configured.
+    mkrCenterFreq (float): Marker center frequency in Hz. [default is x]
+    span (float): Span in Hz over which to measure band power. [default is x]
+    bandPowerState (int): Turns band power calculation off or on. [0, 1, default is 1]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ae4cb995eeadfe9028f5efd8dd64ab94d}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_sa\_source@{configure\_sa\_source}}
+\index{configure\_sa\_source@{configure\_sa\_source}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_sa\_source()}{configure\_sa\_source()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ae4cb995eeadfe9028f5efd8dd64ab94d} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+sa\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{source\+Port}{ = {\ttfamily 1}, }\item[{}]{port\+State\+On}{ = {\ttfamily 0}, }\item[{}]{source\+Freq}{ = {\ttfamily 1e9}, }\item[{}]{source\+Power}{ = {\ttfamily -\/15}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the Source tab in spectrum analzyer setup.
+
+Args:
+    sourcePort (int): Source port to be configured. [1, 2, default is 1]
+    portStateOn (int): Turns source port off or on. [0, 1, default is 0]
+    sourceFreq (int): CW frequency of source. [default is x]
+    sourcePower (float): CW power of source. [default is x]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aed2c1ec47ab6587bbb57d0dff7382e08}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_sa\_sweep@{configure\_sa\_sweep}}
+\index{configure\_sa\_sweep@{configure\_sa\_sweep}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_sa\_sweep()}{configure\_sa\_sweep()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aed2c1ec47ab6587bbb57d0dff7382e08} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+sa\+\_\+sweep (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{center\+Freq}{ = {\ttfamily 1e9}, }\item[{}]{span}{ = {\ttfamily 1e9}, }\item[{}]{start\+Freq}{ = {\ttfamily 500e6}, }\item[{}]{stop\+Freq}{ = {\ttfamily 1.5e9}, }\item[{}]{num\+Points}{ = {\ttfamily 801}, }\item[{}]{res\+Bw}{ = {\ttfamily 1e6}, }\item[{}]{video\+Bw}{ = {\ttfamily 1e6}, }\item[{}]{detector\+Type}{ = {\ttfamily \textquotesingle{}peak\textquotesingle{}}, }\item[{}]{use\+Start\+Stop}{ = {\ttfamily 1}, }\item[{}]{res\+Bw\+Auto}{ = {\ttfamily 1}, }\item[{}]{video\+Bw\+Auto}{ = {\ttfamily 1}, }\item[{}]{detector\+Bypass}{ = {\ttfamily 0}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the SA tab in spectrum analzyer setup.
+
+Args:
+    centerFreq (float): Center frequency in Hz. Unused if useStartStop=1. [default is x]
+    span (float): Span frequency in Hz. Unused if useStartStop=1. [default is x]
+    startFreq (float): Start frequency in Hz. Unused if useStartStop=0. [default is x]
+    stopFreq (float): Stop frequency in Hz. Unused if useStartStop=0. [default is x]
+    numPoints (int): Number of trace points. [default is 801]
+    resBw (float): Resolution bandwidth in Hz. Unused if resBwAuto=1. [default is x]
+    videoBw (float): Video bandwidth in Hz. Unused if videoBwAuto=1. [default is x]
+    detectorType (str): Spectrum analyzer detector type. [see validDetectorTypes, default is 'peak']
+    useStartStop (int): Determines whether to use start/stop [1] or center/span [0] for frequency settings. [0, 1, default is 1]
+    resBwAuto (int): Determines whether to use automatic resolution bandwidth setting based on span. [0, 1, default is 1]
+    videoBwAuto (int): Determines whether to use automatic video bandwidth setting based on span. [0, 1, default is 1]
+    detectorBypass (int): Determines whether to bypass detector and use all FFT points. [0, 1, default is 0]
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ac8b539d1e688e330ec047d14e66dde4f}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_smc\_stimulus@{configure\_smc\_stimulus}}
+\index{configure\_smc\_stimulus@{configure\_smc\_stimulus}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_smc\_stimulus()}{configure\_smc\_stimulus()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ac8b539d1e688e330ec047d14e66dde4f} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+smc\+\_\+stimulus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{input\+Port}{ = {\ttfamily 1}, }\item[{}]{output\+Port}{ = {\ttfamily 2}, }\item[{}]{port\+Power}{ = {\ttfamily -\/15}, }\item[{}]{num\+Points}{ = {\ttfamily 201}, }\item[{}]{if\+Bw}{ = {\ttfamily 10e3}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure the ports, power, number of points, and IF bandwidth for an SMC measurement.
+
+Arguments:
+    inputPort (int): Port connected to DUT input. [1, 2, default is 1]
+    outputPort (int): Port connected to DUT output. [1, 2, default is 2]
+    portPower (float): VNA output power in dBm. [default is x]
+    numPoints (int): Number of points to measure. [default is 201]
+    ifBw (int): IF Bandwidth in Hz. [default is x]
+    ch (int): Channel for which stimulus is configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a6521e46d600ad20aab800d237e1ad827}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!configure\_sparam\_stimulus@{configure\_sparam\_stimulus}}
+\index{configure\_sparam\_stimulus@{configure\_sparam\_stimulus}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{configure\_sparam\_stimulus()}{configure\_sparam\_stimulus()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a6521e46d600ad20aab800d237e1ad827} 
+py\+\_\+vna.\+pyvisa\+VNA.\+configure\+\_\+sparam\+\_\+stimulus (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start\+Freq}{ = {\ttfamily 10e6}, }\item[{}]{stop\+Freq}{ = {\ttfamily 44e9}, }\item[{}]{port\+Power}{ = {\ttfamily -\/15}, }\item[{}]{num\+Points}{ = {\ttfamily 201}, }\item[{}]{if\+Bw}{ = {\ttfamily 100e3}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configure the frequency, power, number of points, and IF bandwidth for an S-param measurement and pause measurement.
+
+Args:
+    startFreq (float): Start frequency in Hz. [default is x]
+    stopFreq (float): Stop frequency in Hz. [default is x]
+    portPower (float): VNA output power in dBm. [default is x]
+    numPoints (int): Number of points to measure. [default is 201]
+    ifBw (int): IF Bandwidth in Hz. [default is 100e3]
+    ch (int): Channel for which stimulus is configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ab18aee84bdba7a0469906e8f35d7b544}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!deembed\_calset@{deembed\_calset}}
+\index{deembed\_calset@{deembed\_calset}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{deembed\_calset()}{deembed\_calset()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ab18aee84bdba7a0469906e8f35d7b544} 
+py\+\_\+vna.\+pyvisa\+VNA.\+deembed\+\_\+calset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{base\+Calset}{, }\item[{}]{final\+Calset}{, }\item[{}]{port\+One\+S2p}{, }\item[{}]{port\+Two\+S2p}{, }\item[{}]{enhanced\+Response}{ = {\ttfamily 1}, }\item[{}]{port\+One\+Power\+Comp}{ = {\ttfamily 0}, }\item[{}]{port\+Two\+Power\+Comp}{ = {\ttfamily 0}, }\item[{}]{enable\+Extrapolation}{ = {\ttfamily 0}, }\item[{}]{over\+Write}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}De-embeds TWO s2p files from a base calset and creates a new calset.
+
+Args:
+    baseCalset (str): Name of existing calset from which s2p files will be de-embedded.
+    finalCalset (str): Name of new calset produced by the de-embedding.
+    portOneS2p (str): Absolute file path of s2p at port 1.
+    portTwoS2p (str): Absolute file path of s2p at port 2.
+    enhancedResponse (int): 1 sets S22 of the fixture to 0 to remove errors from transmission measurements. 0 de-embeds the s2p file normally.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_acbd5848d6be88c80225039a1644673a0}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!deembed\_s2p\_file@{deembed\_s2p\_file}}
+\index{deembed\_s2p\_file@{deembed\_s2p\_file}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{deembed\_s2p\_file()}{deembed\_s2p\_file()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_acbd5848d6be88c80225039a1644673a0} 
+py\+\_\+vna.\+pyvisa\+VNA.\+deembed\+\_\+s2p\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{vna\+Port}{, }\item[{}]{s2p\+File\+Name}{, }\item[{}]{reverse\+S2p}{ = {\ttfamily 0}, }\item[{}]{snn\+Zero}{ = {\ttfamily 0}, }\item[{}]{enable\+Extrapolation}{ = {\ttfamily 0}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}De-embeds an s2p file from specified VNA port. If multiple s2p files must be de-embedded, this method must be called once for each de-embed.
+
+Arguments:
+    vnaPort (int): Specifies the VNA port from which the s2p file will be de-embedded. [1,2,3,4]
+    s2pFileName (str): Full absolute file path to the s2p being de-embedded.
+    reverseS2p (int): 0 leaves the s2p file definition as is, 1 reverses the ports of the s2p file.
+    snnZero (int): 0 does not modify s2p file, 1 sets the match at the DUT port to 0 (linear).
+    enableExtrapolation (int): 0 does not enable extrapolation, 1 enables extrapolation.
+    ch (int): Channel to which de-embedding is applied.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a0c3aaec2d44597b30537a0e66817f0b8}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!define\_cal\_all@{define\_cal\_all}}
+\index{define\_cal\_all@{define\_cal\_all}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{define\_cal\_all()}{define\_cal\_all()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a0c3aaec2d44597b30537a0e66817f0b8} 
+py\+\_\+vna.\+pyvisa\+VNA.\+define\+\_\+cal\+\_\+all (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{selected\+Channels}{ = {\ttfamily \textquotesingle{}all\textquotesingle{}}, }\item[{}]{port\+Array}{ = {\ttfamily \mbox{[}1,2\mbox{]}}, }\item[{}]{connectors}{ = {\ttfamily \mbox{[}\textquotesingle{}APC~3.5~female\textquotesingle{},~\textquotesingle{}APC~3.5~female\textquotesingle{}\mbox{]}}, }\item[{}]{cal\+Kits}{ = {\ttfamily \mbox{[}\textquotesingle{}N4693D~User~1~ECal~MY62350179\textquotesingle{},~\textquotesingle{}N4693D~User~1~ECal~MY62350179\textquotesingle{}\mbox{]}}, }\item[{}]{include\+Power\+Cal}{ = {\ttfamily 0}, }\item[{}]{power\+Cal\+Level}{ = {\ttfamily 0}, }\item[{}]{sparam\+Cal\+Level}{ = {\ttfamily -\/15}, }\item[{}]{offset\+Ports}{ = {\ttfamily \mbox{[}1\mbox{]}}, }\item[{}]{power\+Offset}{ = {\ttfamily \mbox{[}0\mbox{]}}, }\item[{}]{sa\+Cal\+Points}{ = {\ttfamily 101}, }\item[{}]{ps\+Visa}{ = {\ttfamily \textquotesingle{}USB0\+:\+:0x0957\+:\+:0x2C18\+:\+:MY53400002\+:\+:0\+:\+:INSTR\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Defines parameters for a Cal All calibration. Note, this does not perform the calibration and should be paired with the run_cal() method to perform the calibration.
+
+Arguments:
+    selectedChannels (str): 'all' selects all available channels for calibration. User can input a comma-separated list of channels to be calibrated. e.g. '1, 2, 3'
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_adb06d25946f617ada41c0835124b533e}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!define\_smart\_cal@{define\_smart\_cal}}
+\index{define\_smart\_cal@{define\_smart\_cal}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{define\_smart\_cal()}{define\_smart\_cal()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_adb06d25946f617ada41c0835124b533e} 
+py\+\_\+vna.\+pyvisa\+VNA.\+define\+\_\+smart\+\_\+cal (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{num\+Ports}{ = {\ttfamily 2}, }\item[{}]{connectors}{ = {\ttfamily \mbox{[}\textquotesingle{}APC~3.5~female\textquotesingle{},~\textquotesingle{}APC~3.5~female\textquotesingle{}\mbox{]}}, }\item[{}]{cal\+Kits}{ = {\ttfamily \mbox{[}\textquotesingle{}N4691D~User~1~ECal~MY57450056\textquotesingle{},~\textquotesingle{}N4691D~User~1~ECal~MY57450056\textquotesingle{}\mbox{]}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Defines the DUT connectors and cal kit for Smart Cal.
+
+Args:
+    numPorts (int): Number of ports for which the calibration is performed. [1, 2, default is 2]
+    connectors (list of strings): Names of the connector types for each DUT port. List length should equal numPorts.
+    calKits (list of strings): Names of the cal kit to be used for each DUT port. List length should equal numPorts.
+    ch (int): Channel for which calibration is specified. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a534b56485f6ce14a559270bd4630f624}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!delete\_mod\_table\_parameter@{delete\_mod\_table\_parameter}}
+\index{delete\_mod\_table\_parameter@{delete\_mod\_table\_parameter}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{delete\_mod\_table\_parameter()}{delete\_mod\_table\_parameter()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a534b56485f6ce14a559270bd4630f624} 
+py\+\_\+vna.\+pyvisa\+VNA.\+delete\+\_\+mod\+\_\+table\+\_\+parameter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mod\+Table\+Param}{ = {\ttfamily \textquotesingle{}Carrier~In1~dBm\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deletes the specified parameter from the Modulation Distortion table.
+
+Args:
+    modTableParam (str): Parameter to be deleted from the modulation distortion table. [see validParams, default is 'Carrier In1 dBm']
+    ch (int): Channel from which the parameter will be deleted. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ae5ef1dc1fc700a65c48961ce334ec9b9}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!enable\_source\_correction@{enable\_source\_correction}}
+\index{enable\_source\_correction@{enable\_source\_correction}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{enable\_source\_correction()}{enable\_source\_correction()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ae5ef1dc1fc700a65c48961ce334ec9b9} 
+py\+\_\+vna.\+pyvisa\+VNA.\+enable\+\_\+source\+\_\+correction (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{correction\+Type}{ = {\ttfamily \textquotesingle{}modpwr\textquotesingle{}}, }\item[{}]{enable}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enables or disables an existing source correction calibration.
+
+Args:
+    correctionType (str): Type of correction to apply. ['modpwr', 'power', 'modulation', default is 'modpwr']
+    enable (int): Enables or disables specified correction. [0, 1, default is 1]
+    ch (int): Channel for which correction is specified. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ad06a1eb44883d705185f88a20dfc0a4c}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!err\_check@{err\_check}}
+\index{err\_check@{err\_check}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{err\_check()}{err\_check()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ad06a1eb44883d705185f88a20dfc0a4c} 
+py\+\_\+vna.\+pyvisa\+VNA.\+err\+\_\+check (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prints out all errors and clears error queue. Raises an Exception with the info of the errors encountered.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a5dd59995dd36e4363520bbb5710680c3}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_all\_ecal\_info@{get\_all\_ecal\_info}}
+\index{get\_all\_ecal\_info@{get\_all\_ecal\_info}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_all\_ecal\_info()}{get\_all\_ecal\_info()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a5dd59995dd36e4363520bbb5710680c3} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+all\+\_\+ecal\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets full info about connected ECals as a list of dicts.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_affc6b144dc03f1089a7e84e2e37231c9}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_all\_ecal\_model\_serial@{get\_all\_ecal\_model\_serial}}
+\index{get\_all\_ecal\_model\_serial@{get\_all\_ecal\_model\_serial}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_all\_ecal\_model\_serial()}{get\_all\_ecal\_model\_serial()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_affc6b144dc03f1089a7e84e2e37231c9} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+all\+\_\+ecal\+\_\+model\+\_\+serial (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the model and serial number for ALL connected ECals.
+
+Returns:
+    list: returns a list of serial numbers of each E-Cal
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a2b51e35ce2cec8736d526b9e0a9515e1}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_cw\_freq@{get\_cw\_freq}}
+\index{get\_cw\_freq@{get\_cw\_freq}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_cw\_freq()}{get\_cw\_freq()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a2b51e35ce2cec8736d526b9e0a9515e1} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+cw\+\_\+freq (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the CW frequency associated with the selected trace.
+
+Args:
+    measName (str): Measurement from which the CW frequency will be retrieved.
+    ch (int): Channel that the selected measurement is on. [default is 1]
+
+Returns:
+    cwFreq (float): CW frequency of the trace.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a56dda5eb307509f5de4af9ded4511bf1}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_ecal\_module\_nums@{get\_ecal\_module\_nums}}
+\index{get\_ecal\_module\_nums@{get\_ecal\_module\_nums}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_ecal\_module\_nums()}{get\_ecal\_module\_nums()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a56dda5eb307509f5de4af9ded4511bf1} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+ecal\+\_\+module\+\_\+nums (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of ECal module numbers.
+
+Returns:
+    (list): List of ints containing ECal module numbers.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a4c6b61cad10f6eae1eca1d184b1a8d9b}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_ecal\_module\_states@{get\_ecal\_module\_states}}
+\index{get\_ecal\_module\_states@{get\_ecal\_module\_states}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_ecal\_module\_states()}{get\_ecal\_module\_states()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a4c6b61cad10f6eae1eca1d184b1a8d9b} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+ecal\+\_\+module\+\_\+states (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ecal\+Num}{ = {\ttfamily 1}, }\item[{}]{num\+Ports}{ = {\ttfamily 2}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of paths in selected ECal.
+
+Args:
+    ecalNum (str): Specifies target ECal module number. [default is 1]
+    numPorts (int): Number of physical ports on ECal. [default is 2]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_af8e214a9d1438bf4db9495167106dd36}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_ecal\_sparam\_data@{get\_ecal\_sparam\_data}}
+\index{get\_ecal\_sparam\_data@{get\_ecal\_sparam\_data}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_ecal\_sparam\_data()}{get\_ecal\_sparam\_data()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_af8e214a9d1438bf4db9495167106dd36} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+ecal\+\_\+sparam\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ecal\+Num}{ = {\ttfamily 1}, }\item[{}]{char}{ = {\ttfamily 0}, }\item[{}]{debug}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}################VERY EXPERIMENTAL################
+
+Gets s-parameter data from ECal.
+
+Args:
+    ecalNum (int, optional): Specifies the E-Cal number that want to get S-Parameter data from. Defaults to 1.
+    char (int, optional): _description_. Defaults to 0.
+    debug (bool, optional): _description_. Defaults to False.
+
+Raises:
+    ValueError: Raise an error when entered ecalNum is not connected
+
+Returns:
+    list: frequency and their corresponding S-Parameter values
+\end{DoxyVerb}
+
+
+\begin{DoxyVerb}CHANGE THIS SO THAT IT'S JUST RETURNING S PARAMS FOR ONE PATH AT A TIME
+MANAGING ALL THE DIFFERENT OPTIONS FOR PATHS AND STATES IS WAY TOO MUCH\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a4c6068d290a302e8bb8386e2198d9cfe}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_file@{get\_file}}
+\index{get\_file@{get\_file}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_file()}{get\_file()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a4c6068d290a302e8bb8386e2198d9cfe} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{vna\+Path}{, }\item[{}]{remote\+Path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transfers a file from "vnaPath" on the VNA to "remotePath" on the remote PC.
+
+Args:
+    vnaPath (str): Full absolute path of the file to be transferred from the VNA to the remote PC.
+    remotePath (str): Full absolute path of the destination file location on the remote PC.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a79a08e90bf3f3e22eab85d1bdc01e60c}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_individual\_ecal\_info@{get\_individual\_ecal\_info}}
+\index{get\_individual\_ecal\_info@{get\_individual\_ecal\_info}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_individual\_ecal\_info()}{get\_individual\_ecal\_info()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a79a08e90bf3f3e22eab85d1bdc01e60c} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+individual\+\_\+ecal\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ecal\+Num}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a dict containing info about a given ECal module.
+
+Args:
+    ecalNum (str): Specifies target ECal module number. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a47dd1810cf2307d3c8a6b215ef42a388}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_individual\_ecal\_model\_serial@{get\_individual\_ecal\_model\_serial}}
+\index{get\_individual\_ecal\_model\_serial@{get\_individual\_ecal\_model\_serial}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_individual\_ecal\_model\_serial()}{get\_individual\_ecal\_model\_serial()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a47dd1810cf2307d3c8a6b215ef42a388} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+individual\+\_\+ecal\+\_\+model\+\_\+serial (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ecal\+Num}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a specified ECal model serial number.
+
+Args:
+    ecalNum (str): Specifies target ECal module number. [default is 1]
+
+Returns:
+    string: Serial number of the E-Cal. 
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aad45c0c404067b7b47af02c9443f0524}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_limit\_status@{get\_limit\_status}}
+\index{get\_limit\_status@{get\_limit\_status}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_limit\_status()}{get\_limit\_status()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aad45c0c404067b7b47af02c9443f0524} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+limit\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the pass/fail status of a limit test in a given channel.
+
+Args:
+    measName (str): Name of trace to which limit line is applied.
+    ch (int): Channel for which to test limits.
+
+Returns:
+    limitStatus (int): 0 is returned when Pass, 1 is returned when Fail.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a8a764fdc0b69a9b13bb4e18f3e34bb7e}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_lo\_frequency\_delta@{get\_lo\_frequency\_delta}}
+\index{get\_lo\_frequency\_delta@{get\_lo\_frequency\_delta}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_lo\_frequency\_delta()}{get\_lo\_frequency\_delta()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a8a764fdc0b69a9b13bb4e18f3e34bb7e} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+lo\+\_\+frequency\+\_\+delta (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the LO Frequency Delta in the Embedded LO dialog for mixer measurements in Modulation Distortion Converters.
+
+Args:
+    ch (int): Channel from which embedded LO frequency is queried. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a416905f532f23efcb3dbaa7a9d74a921}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_meas\_names@{get\_meas\_names}}
+\index{get\_meas\_names@{get\_meas\_names}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_meas\_names()}{get\_meas\_names()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a416905f532f23efcb3dbaa7a9d74a921} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+meas\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ch}{ = {\ttfamily 1}, }\item[{}]{include\+Params}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets all measurement names for a given channel.
+
+Args:
+    ch (int): Channel from which measurement names are queried. [default is 1]
+    includeParams (int): Determines whether to return only list of names or a dict of measurement names and measurement parameters. [default is 0]
+
+Returns:
+    if includeParams = 0:
+        returns (list): All measurement names. ['mName1', 'mName2']
+    else:
+        returns (dict): All measurement names and parameters. {'mName1': 'mParam1', 'mName2': 'mParam2'}
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aee0be69e1af7df19322e8e299c6dd7fe}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_meas\_number\_from\_name@{get\_meas\_number\_from\_name}}
+\index{get\_meas\_number\_from\_name@{get\_meas\_number\_from\_name}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_meas\_number\_from\_name()}{get\_meas\_number\_from\_name()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aee0be69e1af7df19322e8e299c6dd7fe} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+meas\+\_\+number\+\_\+from\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets measurement number from measurement name. This is a helper function used in other class methods and is not intended to be used on its own.
+
+Args:
+    measName (string): Name of the measurement from which to get the corresponding measurement number
+    ch (int): Channel to which the measurement belongs. [default is 1]
+
+Returns:
+    int: The measuremnt number of the specified measurement name
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ada996075c3d84e21fefcc1a6a76c8262}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_mod\_data@{get\_mod\_data}}
+\index{get\_mod\_data@{get\_mod\_data}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_mod\_data()}{get\_mod\_data()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ada996075c3d84e21fefcc1a6a76c8262} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+mod\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mod\+Table\+Param}{ = {\ttfamily \textquotesingle{}Carrier~In1~dBm\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a specific value from the Modulation Distortion table.
+
+Args:
+    modTableParam (str): Parameter to be extracted from the modulation distortion table. [see validParams, default is 'Carrier In1 dBm']
+    ch (int): Channel from which the parameter is extracted. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a68b0f012bb3d65eed32c3ebf177ba4d1}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_sa\_marker\_band\_power@{get\_sa\_marker\_band\_power}}
+\index{get\_sa\_marker\_band\_power@{get\_sa\_marker\_band\_power}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_sa\_marker\_band\_power()}{get\_sa\_marker\_band\_power()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a68b0f012bb3d65eed32c3ebf177ba4d1} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+sa\+\_\+marker\+\_\+band\+\_\+power (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mkr\+Num}{, }\item[{}]{meas\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets band power level from band power marker.
+
+Args:
+    mkrNum (int): Marker number. [0-15]
+    measName (str): Name of the measurement to which the marker will be added.
+    ch (int): Channel for which settings are configured. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ae49a231e4b3b0e72e0247d3aa966d167}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!get\_trace@{get\_trace}}
+\index{get\_trace@{get\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{get\_trace()}{get\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ae49a231e4b3b0e72e0247d3aa966d167} 
+py\+\_\+vna.\+pyvisa\+VNA.\+get\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Acquires frequency and measurement data from selected measurement on VNA for plotting.
+
+Args:
+    measName (str): Measurement from which data will be taken.
+    ch (int): Channel to which the measurement belongs. [default is 1]
+
+Returns:
+    freq (NumPy ndArray): Measurement frequency (x-axis) values.
+    meas (NumPy ndArray): Measurment data (y-axis) values.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ae1a0ec8b6a63ce09ed9a0ca4fece6fc4}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!hold\_trigger@{hold\_trigger}}
+\index{hold\_trigger@{hold\_trigger}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{hold\_trigger()}{hold\_trigger()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ae1a0ec8b6a63ce09ed9a0ca4fece6fc4} 
+py\+\_\+vna.\+pyvisa\+VNA.\+hold\+\_\+trigger (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets a given channel to hold so it doesn't run.
+
+Args:
+    ch (int): Channel for which the trigger is set to hold. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a98454d98343d60d5471223085f13a834}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!initiate\_source\_correction\_cal@{initiate\_source\_correction\_cal}}
+\index{initiate\_source\_correction\_cal@{initiate\_source\_correction\_cal}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{initiate\_source\_correction\_cal()}{initiate\_source\_correction\_cal()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a98454d98343d60d5471223085f13a834} 
+py\+\_\+vna.\+pyvisa\+VNA.\+initiate\+\_\+source\+\_\+correction\+\_\+cal (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{timeout\+Ms}{ = {\ttfamily 60000}, }\item[{}]{source\+Name}{ = {\ttfamily \textquotesingle{}VXT\textquotesingle{}}, }\item[{}]{retry}{ = {\ttfamily 1}, }\item[{}]{max\+Retries}{ = {\ttfamily 3}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initiates a source correction calibration and turns on the correction.
+
+Args:
+    timeoutMs (int): Temporary timeout for acquiring the calibration in milliseconds. [default is 60000]
+    sourceName (str): User-specified name of the source to be used. [default is 'VXT']            
+    retry (int): If 1, rerun the source correction until it is successful. If 0, run once regardless of success or failure. [default is 1]
+    maxRetries (int): Specifies the maximum number of retries if the source correction fails. [default is 3]
+    ch (int): Channel for which the source correction is acquired. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a934dab0ec31ac0b2f00699646b427792}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!list\_cal\_sets@{list\_cal\_sets}}
+\index{list\_cal\_sets@{list\_cal\_sets}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{list\_cal\_sets()}{list\_cal\_sets()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a934dab0ec31ac0b2f00699646b427792} 
+py\+\_\+vna.\+pyvisa\+VNA.\+list\+\_\+cal\+\_\+sets (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Lists all available cal sets.
+
+Returns:
+    (list): List of available calibration sets.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aa96bd0fc0962f5e0ff180ff7314eb508}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!load\_cal\_set@{load\_cal\_set}}
+\index{load\_cal\_set@{load\_cal\_set}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{load\_cal\_set()}{load\_cal\_set()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aa96bd0fc0962f5e0ff180ff7314eb508} 
+py\+\_\+vna.\+pyvisa\+VNA.\+load\+\_\+cal\+\_\+set (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cal\+Set}{, }\item[{}]{use\+Cal\+Set\+Stimulus}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads an existing calset into the specified VNA measurement channel.
+
+Args:
+    calSet (str): Name of existing calset.
+    useCalSetStimulus (int): 1=sets stimulus of active channel to match cal set stimulus. [0, 1, default is 1]
+    ch (int): Channel to which calibration is applied. Default is 1.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a02fabdf4a72e5bfdf4c51d24147fba0d}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!load\_s2p@{load\_s2p}}
+\index{load\_s2p@{load\_s2p}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{load\_s2p()}{load\_s2p()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a02fabdf4a72e5bfdf4c51d24147fba0d} 
+py\+\_\+vna.\+pyvisa\+VNA.\+load\+\_\+s2p (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file\+Name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads s2p data into a new channel in the VNA from an external file.
+
+Args:
+    fileName (str): Full path of s2p file to load.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aae803084641bba71534e69ba6487ae93}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!marker\_activate@{marker\_activate}}
+\index{marker\_activate@{marker\_activate}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{marker\_activate()}{marker\_activate()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aae803084641bba71534e69ba6487ae93} 
+py\+\_\+vna.\+pyvisa\+VNA.\+marker\+\_\+activate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mkr\+Num}{, }\item[{}]{meas\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds marker to given trace in a given channel.
+
+Args:
+    mkrNum (int): Marker number. [0-15]
+    measName (str): Name of the measurement to which the marker will be added.
+    ch (int): Channel to which the marker will be added. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aea85044f589e24b243dc16a7a59b6526}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!marker\_format@{marker\_format}}
+\index{marker\_format@{marker\_format}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{marker\_format()}{marker\_format()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aea85044f589e24b243dc16a7a59b6526} 
+py\+\_\+vna.\+pyvisa\+VNA.\+marker\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mkr\+Num}{, }\item[{}]{meas\+Name}{, }\item[{}]{format}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets format of marker in a given trace in a given channel.
+
+Args:
+    mkrNum (int): Marker number.
+    measName (str): Name of the measurement to which the marker belongs.
+    format (str): Format to be applied to the marker. [Default is 'default', see validFormats]
+    ch (int): Channel to which the marker belongs.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a862de4b0280d339d91a84dc89b43e597}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!marker\_get\_x@{marker\_get\_x}}
+\index{marker\_get\_x@{marker\_get\_x}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{marker\_get\_x()}{marker\_get\_x()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a862de4b0280d339d91a84dc89b43e597} 
+py\+\_\+vna.\+pyvisa\+VNA.\+marker\+\_\+get\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mkr\+Num}{, }\item[{}]{meas\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the x value of the marker.
+
+Args:
+    mkrNum (int): Marker number.
+    measName (str): Name of the measurement to which the marker belongs.
+    ch (int): Channel to which the marker belongs.
+
+Returns:
+    mkrX (float): Returns the x value of the selected marker
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_af892ac2b90a40f7e8da86a35df7677f7}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!marker\_get\_y@{marker\_get\_y}}
+\index{marker\_get\_y@{marker\_get\_y}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{marker\_get\_y()}{marker\_get\_y()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_af892ac2b90a40f7e8da86a35df7677f7} 
+py\+\_\+vna.\+pyvisa\+VNA.\+marker\+\_\+get\+\_\+y (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mkr\+Num}{, }\item[{}]{meas\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the y value of the marker.
+
+Args:
+    mkrNum (int): Marker number.
+    measName (str): Name of the measurement to which the marker belongs.
+    ch (int): Channel to which the marker belongs.
+
+Returns:
+    mkrY (float): Returns the Y value of the selected marker
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a94ab33817ce1d34560c469edca9b1f5f}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!marker\_set\_x@{marker\_set\_x}}
+\index{marker\_set\_x@{marker\_set\_x}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{marker\_set\_x()}{marker\_set\_x()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a94ab33817ce1d34560c469edca9b1f5f} 
+py\+\_\+vna.\+pyvisa\+VNA.\+marker\+\_\+set\+\_\+x (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mkr\+Num}{, }\item[{}]{meas\+Name}{, }\item[{}]{mkrX}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the x value of the marker.
+
+Args:
+    mkrNum (int): Marker number.
+    measName (str): Name of the measurement to which the marker belongs.
+    mkrX (float): Desired X value at which the marker will be set.
+    ch (int): Channel to which the marker belongs.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a1dae135213e18e13d56c0e50aab7fa19}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!measure\_cal\_standard@{measure\_cal\_standard}}
+\index{measure\_cal\_standard@{measure\_cal\_standard}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{measure\_cal\_standard()}{measure\_cal\_standard()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a1dae135213e18e13d56c0e50aab7fa19} 
+py\+\_\+vna.\+pyvisa\+VNA.\+measure\+\_\+cal\+\_\+standard (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{standard\+Number}{, }\item[{}]{blocking}{ = {\ttfamily 1}, }\item[{}]{timeout\+Ms}{ = {\ttfamily 30000}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Measures a given calibration standard. Used in the run_cal() method and is not intended to be used by itself.
+
+Args:
+    standardNumber (int): Determines the standard number/calibration step to be measured.
+    blocking (bool): 1 causes the measurement SCPI command to be blocking, 0 causes it to be non-blocking. [0, 1, default is 1]
+    timeoutMs (int): Temporary timeout setting in milliseconds to allow for long standard measurement times.
+    ch (int): Channel on which calibration is performed. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a78f48ee67f67222624f3b7d70d71397f}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_gca\_trace@{new\_gca\_trace}}
+\index{new\_gca\_trace@{new\_gca\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_gca\_trace()}{new\_gca\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a78f48ee67f67222624f3b7d70d71397f} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+gca\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}GainAtCompression\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}CompGain21\textquotesingle{}}, }\item[{}]{modify}{ = {\ttfamily 0}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new trace in a Gain Compression channel.
+
+Args:
+    measName (str): Name of trace/measurement, e.g. "MyVeryCoolS21Measurement". [default is 'GainAtCompression']
+    measParam (str): Name of parameter to be measured by trace, e.g. "S21". [see validParams, default is 'CompGain21']
+    modify (int): Specifies whether to modify an existing measurement or create a new one. [0=create new trace, 1=modify existing trace, default is 0]
+    win (int): Window where the trace/measurement will be displayed. [default is 1]
+    ch (int): Channel to which the trace/measurement will be assigned. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a9b4d26fd12bf5d70505f499a8f9a3fe5}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_gcax\_trace@{new\_gcax\_trace}}
+\index{new\_gcax\_trace@{new\_gcax\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_gcax\_trace()}{new\_gcax\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a9b4d26fd12bf5d70505f499a8f9a3fe5} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+gcax\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}GainAtCompression\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}CompGain21\textquotesingle{}}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new trace in a Gain Compression Converters channel.
+
+measName (str): Name of trace/measurement, e.g. "MyVeryCoolS21Measurement". [default is 'GainAtCompression']
+    measParam (str): Name of parameter to be measured by trace, e.g. "S21". [default is 'CompGain21']
+    win (int): Window where the trace/measurement will be displayed. [default is 1]
+    ch (int): Channel to which the trace/measurement will be assigned. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a4fb601fa6da07a56ad875da9427fbfcb}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_mod\_trace@{new\_mod\_trace}}
+\index{new\_mod\_trace@{new\_mod\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_mod\_trace()}{new\_mod\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a4fb601fa6da07a56ad875da9427fbfcb} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+mod\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}InputPower\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}PIn1\textquotesingle{}}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new trace in a Modulation Distortion channel.
+
+Args:
+    measName (str): Name of the trace to be added. [default is 'InputPower']
+    measParam (str): Specifies the trace to be added. [see validParams, default is 'PIn1']
+    win (int): Window to which trace will be added. [default is 1]
+    ch (int): Channel to which trace will be added. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a4ed8985a613abe73837ec14be79e35a4}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_modx\_trace@{new\_modx\_trace}}
+\index{new\_modx\_trace@{new\_modx\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_modx\_trace()}{new\_modx\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a4ed8985a613abe73837ec14be79e35a4} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+modx\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}InputPower\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}PIn1\textquotesingle{}}, }\item[{}]{modify}{ = {\ttfamily 0}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new trace in a Modulation Distortion Converters channel.
+
+Args:
+    measName (str): Name of the trace to be added. [default is 'InputPower']
+    measParam (str): Specifies the trace to be added. [see validParams, default is 'PIn1']
+    modify (int): Specifies if a new measurement will be created or an existing measurement will be modified. [0, 1, default is 0]
+    win (int): Window to which trace will be added. [default is 1]
+    ch (int): Channel to which trace will be added. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a94dad5148a3cf1e6b450388d6c5c3a10}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_nf\_trace@{new\_nf\_trace}}
+\index{new\_nf\_trace@{new\_nf\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_nf\_trace()}{new\_nf\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a94dad5148a3cf1e6b450388d6c5c3a10} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+nf\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}Noise~Figure\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}NF\textquotesingle{}}, }\item[{}]{modify}{ = {\ttfamily 0}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new trace in a Noise Figure channel.
+
+Args:
+    measName (str): Name of trace/measurement, e.g. "MyVeryCoolS21Measurement". [default is 'Noise Figure']
+    measParam (str): Name of parameter to be measured by trace, e.g. "S21". [see validParams, default is 'NF']
+    modify (int): 0 creates a new measurement, 1 modifies an existing measurement. [default is 0]
+    win (int): Window where the trace/measurement will be displayed. [default is 1]
+    ch (int): Channel to which the trace/measurement will be assigned. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a7a114858aaa83e39c420f4724be3297a}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_nfx\_trace@{new\_nfx\_trace}}
+\index{new\_nfx\_trace@{new\_nfx\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_nfx\_trace()}{new\_nfx\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a7a114858aaa83e39c420f4724be3297a} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+nfx\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}Noise~Figure\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}NF\textquotesingle{}}, }\item[{}]{modify}{ = {\ttfamily 0}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new trace in a Noise Figure channel.
+
+Args:
+    measName (str): Name of trace/measurement, e.g. "MyVeryCoolS21Measurement". [default is 'Noise Figure']
+    measParam (str): Name of parameter to be measured by trace, e.g. "S21". [see validParams, default is 'NF']
+    modify (int): 0 creates a new measurement, 1 modifies an existing measurement. [default is 0]
+    win (int): Window where the trace/measurement will be displayed. [default is 1]
+    ch (int): Channel to which the trace/measurement will be assigned. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ae4cd60cd8d3e5423299b4834ebfbdb2d}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_sa\_trace@{new\_sa\_trace}}
+\index{new\_sa\_trace@{new\_sa\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_sa\_trace()}{new\_sa\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ae4cd60cd8d3e5423299b4834ebfbdb2d} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+sa\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}Spectrum\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}B\textquotesingle{}}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new trace in a spectrum analyzer channel.
+
+Args:
+    measName (str): Name of trace/measurement, e.g. "MyVeryCoolS21Measurement". [default is 'Spectrum']
+    measParam (str): Name of parameter to be measured by trace, e.g. "S21". [see validParams, default is 'B']
+    win (int): Window where the trace/measurement will be displayed. [default is 1]
+    ch (int): Channel to which the trace/measurement will be assigned. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a115c4914d0fb311c6087b244d09247e7}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_smc\_trace@{new\_smc\_trace}}
+\index{new\_smc\_trace@{new\_smc\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_smc\_trace()}{new\_smc\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a115c4914d0fb311c6087b244d09247e7} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+smc\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}ForwardConversion\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}SC21\textquotesingle{}}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new trace in a Scalar Mixer Converters channel.
+
+Args:
+    measName (str): Name of trace/measurement, e.g. "MyVeryCoolS21Measurement". [default is 'ForwardConversion']
+    measParam (str): Name of parameter to be measured by trace, e.g. "S21". [default is 'SC21']
+    win (int): Window where the trace/measurement will be displayed. [default is 1]
+    ch (int): Channel to which the trace/measurement will be assigned. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ab4ff0a24a9db0c55fcf06e4e56c7e866}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!new\_sparam\_trace@{new\_sparam\_trace}}
+\index{new\_sparam\_trace@{new\_sparam\_trace}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{new\_sparam\_trace()}{new\_sparam\_trace()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ab4ff0a24a9db0c55fcf06e4e56c7e866} 
+py\+\_\+vna.\+pyvisa\+VNA.\+new\+\_\+sparam\+\_\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{ = {\ttfamily \textquotesingle{}ReturnLoss\textquotesingle{}}, }\item[{}]{meas\+Param}{ = {\ttfamily \textquotesingle{}S11\textquotesingle{}}, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new S-parameter trace in a standard channel.
+
+Args:
+    measName (str): Name of trace/measurement, e.g. "MyVeryCoolS21Measurement". [default is 'ReturnLoss']
+    measParam (str): Name of parameter to be measured by trace, e.g. "S21". [default is 'S11']
+    win (int): Window where the trace/measurement will be displayed. [default is 1]
+    ch (int): Channel to which the trace/measurement will be assigned. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_af3a915a3c5d4408bf5a043b83cd3516a}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!preset@{preset}}
+\index{preset@{preset}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{preset()}{preset()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_af3a915a3c5d4408bf5a043b83cd3516a} 
+py\+\_\+vna.\+pyvisa\+VNA.\+preset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{clear\+All}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Presets the VNA, and optionally clears all traces and windows.
+
+Args:
+    clearAll (int): Determines whether to clears all windows and traces. [0, 1, default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a99b32319d14c990ac5367c5c618c2c3d}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!print\_capabilities@{print\_capabilities}}
+\index{print\_capabilities@{print\_capabilities}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{print\_capabilities()}{print\_capabilities()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a99b32319d14c990ac5367c5c618c2c3d} 
+py\+\_\+vna.\+pyvisa\+VNA.\+print\+\_\+capabilities (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prints instrument information to the console.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a14017ca7e0d89b32981979a611cd6b00}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!recall\_state\_file@{recall\_state\_file}}
+\index{recall\_state\_file@{recall\_state\_file}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{recall\_state\_file()}{recall\_state\_file()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a14017ca7e0d89b32981979a611cd6b00} 
+py\+\_\+vna.\+pyvisa\+VNA.\+recall\+\_\+state\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file\+Name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recalls a .csa file.
+
+Args:
+    fileName (str): Name of .csa file to recall.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a9260408ac2c561c1f6efe49556797753}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!run\_cal@{run\_cal}}
+\index{run\_cal@{run\_cal}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{run\_cal()}{run\_cal()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a9260408ac2c561c1f6efe49556797753} 
+py\+\_\+vna.\+pyvisa\+VNA.\+run\+\_\+cal (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cal\+Set\+Name}{ = {\ttfamily \textquotesingle{}my~cal\textquotesingle{}}, }\item[{}]{cal\+Set\+Timestamp\+Suffix}{ = {\ttfamily 1}, }\item[{}]{blocking}{ = {\ttfamily 1}, }\item[{}]{timeout\+Ms}{ = {\ttfamily 60000}, }\item[{}]{ch}{ = {\ttfamily 1}, }\item[{}]{prompt\+User}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initiates a guided calibration. The define_cal_all() method should be run prior to this method.
+
+Args:
+    calSetName (str): Name of cal set.
+    casetTimestampSuffix (bool): 1=appends a timestamp in the format _YYYYMMdd_hh-mm-ss to the cal set name.
+    blocking (int): 1=blocks script from executing until each standard measurement in calibration process completes.
+    timeoutMs (int): Temporary timeout setting in milliseconds to allow for long standard measurement times. [default is 30000]
+    ch (int): Channel on which calibration is performed. [default is 1]
+    promptUser (int): 1 prompts user to make/change connections, 0 just runs the cal without stopping
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a06ed39a5b39e1273b11240ace0c63b00}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!save\_csv@{save\_csv}}
+\index{save\_csv@{save\_csv}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{save\_csv()}{save\_csv()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a06ed39a5b39e1273b11240ace0c63b00} 
+py\+\_\+vna.\+pyvisa\+VNA.\+save\+\_\+csv (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{file\+Name}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves csv-formatted measurement data at destPath on the VNA.
+
+Args:
+    measName (str): Name of the measurement trace to save.
+    fileName (str): Full absolute path of the destination file location on the VNA.
+    ch (int): Channel of the data to be saved.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a40f3ad69f986e95502ab1beb11c74f6b}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!save\_mod\_distortion\_table@{save\_mod\_distortion\_table}}
+\index{save\_mod\_distortion\_table@{save\_mod\_distortion\_table}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{save\_mod\_distortion\_table()}{save\_mod\_distortion\_table()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a40f3ad69f986e95502ab1beb11c74f6b} 
+py\+\_\+vna.\+pyvisa\+VNA.\+save\+\_\+mod\+\_\+distortion\+\_\+table (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file\+Name}{ = {\ttfamily \textquotesingle{}C\+:/Users/Public/Documents/Network~Analyzer/distortion\+\_\+table.csv\textquotesingle{}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves the data in the Modulation Distortion table to a csv file on the VNA PC.
+
+Args:
+    fileName (str): Location to save the distortion table csv file. [default is x]
+    ch (int): Channel from which the distortion table will be saved. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a77618857e06254c209f0c773777497ec}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!save\_s2p@{save\_s2p}}
+\index{save\_s2p@{save\_s2p}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{save\_s2p()}{save\_s2p()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a77618857e06254c209f0c773777497ec} 
+py\+\_\+vna.\+pyvisa\+VNA.\+save\+\_\+s2p (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{meas\+Name}{, }\item[{}]{file\+Name}{, }\item[{}]{ports}{ = {\ttfamily \mbox{[}1,2\mbox{]}}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves an s2p file from a standard channel measurement.
+
+Args:
+    measName (str): Name of trace/measurement, e.g. "MyVeryCoolS21Measurement".
+    fileName (str): Absolute file path for saved s2p file.
+    ports (list): List of 2 VNA ports from which data will be saved. [default is [1,2]]
+    ch (int): Channel from which data will be saved. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a193adcc7a0d312c4dc64dd3167411ba7}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!save\_screenshot@{save\_screenshot}}
+\index{save\_screenshot@{save\_screenshot}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{save\_screenshot()}{save\_screenshot()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a193adcc7a0d312c4dc64dd3167411ba7} 
+py\+\_\+vna.\+pyvisa\+VNA.\+save\+\_\+screenshot (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file\+Path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves a screenshot (MUST BE IN .bmp FORMAT) at destPath on the VNA.
+
+Args:
+    filePath (str): Full absolute path of the destination file location on the VNA.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a8112681aae23d8870f9fe1fce4ddf4e1}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!select\_channel@{select\_channel}}
+\index{select\_channel@{select\_channel}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{select\_channel()}{select\_channel()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a8112681aae23d8870f9fe1fce4ddf4e1} 
+py\+\_\+vna.\+pyvisa\+VNA.\+select\+\_\+channel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Selects the first trace in the specified channel and sets it as active.
+
+Arguments:
+ch (int): Channel to be selected.
+
+Returns:
+    activeChannel (int): Number of the active channel.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a5db48b93f6a87bbb248c99be61661faa}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!send\_file@{send\_file}}
+\index{send\_file@{send\_file}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{send\_file()}{send\_file()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a5db48b93f6a87bbb248c99be61661faa} 
+py\+\_\+vna.\+pyvisa\+VNA.\+send\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{remote\+Path}{, }\item[{}]{vna\+Path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transfers file from "sourcePath" on the remote PC to "vnaPath" on the VNA.
+
+Args:
+    remotePath (str): Full absolute path of the file on the remote PC that will be transferred to the VNA.
+    vnaPath (str): Full absolute path of the destination file location on the VNA.
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_abdbf670fc23e2435d6d1adef01b0c243}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!set\_ecal\_path@{set\_ecal\_path}}
+\index{set\_ecal\_path@{set\_ecal\_path}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{set\_ecal\_path()}{set\_ecal\_path()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_abdbf670fc23e2435d6d1adef01b0c243} 
+py\+\_\+vna.\+pyvisa\+VNA.\+set\+\_\+ecal\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ecal\+Num}{ = {\ttfamily 1}, }\item[{}]{path}{ = {\ttfamily \textquotesingle{}a\textquotesingle{}}, }\item[{}]{state}{ = {\ttfamily 1}, }\item[{}]{num\+Ports}{ = {\ttfamily 2}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the state of a given path in an ECal.
+
+Args:
+    ecalNum (str): Specifies target ECal module number. [default is 1]
+    path (str): Path through the ECal. [default is 'a']
+    state (int): Impedance state for the specified path through the ECal. [default is 1]
+    numPorts (int): Number of ports in the ECal. [default is 2]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ab3a0fd4a0b10a8fd8e6b845f6e4717ec}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!set\_frequency\_reference@{set\_frequency\_reference}}
+\index{set\_frequency\_reference@{set\_frequency\_reference}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{set\_frequency\_reference()}{set\_frequency\_reference()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ab3a0fd4a0b10a8fd8e6b845f6e4717ec} 
+py\+\_\+vna.\+pyvisa\+VNA.\+set\+\_\+frequency\+\_\+reference (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{is\+Ext\+Reference}{ = {\ttfamily 1}, }\item[{}]{ref\+Freq}{ = {\ttfamily 100e6}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the VNA for external reference.
+
+Args:
+    isExtReference (int): Specifies if the reference is external or internal. [0, 1, default is 1]
+    refFreq (float): Reference frequency. [default is 100e6]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a07285ada85be063d01f34febc6d7e4e9}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!show\_distortion\_table@{show\_distortion\_table}}
+\index{show\_distortion\_table@{show\_distortion\_table}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{show\_distortion\_table()}{show\_distortion\_table()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a07285ada85be063d01f34febc6d7e4e9} 
+py\+\_\+vna.\+pyvisa\+VNA.\+show\+\_\+distortion\+\_\+table (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{win}{ = {\ttfamily 1}, }\item[{}]{enabled}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shows or hides the Modulation Distortion table.
+
+Args:
+    win (int): Window in which the distortion table is configured. [default is 1]
+    enabled (int): Specifies whether to hide or show the distortoin table. [0, 1, default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aa46e1d193cfcf204ef736002255f7fa0}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!single\_trigger@{single\_trigger}}
+\index{single\_trigger@{single\_trigger}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{single\_trigger()}{single\_trigger()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aa46e1d193cfcf204ef736002255f7fa0} 
+py\+\_\+vna.\+pyvisa\+VNA.\+single\+\_\+trigger (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{temp\+Timeout}{ = {\ttfamily None}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Executes a single sweep and waits for the sweep to complete.
+
+Args:
+    ch (int): Channel on which the acquisition will be performed. [default is 1]
+    tempTimeout (int): Temporary timeout in ms to be used if non-standard timeout is desired. [default is None]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aedf82db63b4e72b167f8918fa6a00e96}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!source\_unleveled\_check@{source\_unleveled\_check}}
+\index{source\_unleveled\_check@{source\_unleveled\_check}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{source\_unleveled\_check()}{source\_unleveled\_check()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aedf82db63b4e72b167f8918fa6a00e96} 
+py\+\_\+vna.\+pyvisa\+VNA.\+source\+\_\+unleveled\+\_\+check (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if a VNA source is unleveled and raises an exception if it is.\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aea2aba826e4bd15a77ff31ab64d56c3f}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!sp6t\_close\_connection@{sp6t\_close\_connection}}
+\index{sp6t\_close\_connection@{sp6t\_close\_connection}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{sp6t\_close\_connection()}{sp6t\_close\_connection()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aea2aba826e4bd15a77ff31ab64d56c3f} 
+py\+\_\+vna.\+pyvisa\+VNA.\+sp6t\+\_\+close\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{module}{ = {\ttfamily 1}, }\item[{}]{route}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Closes a path in the M9157 PXIe SP6T switch card.
+
+Args:
+    module (int): Selects which M9157 card to control. [default is 1]
+    route (int): Selects which route to close in the SP6T. [1-6, default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a0dcdabcd3c90a65ea12dfe351c640864}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!sp6t\_connection\_status@{sp6t\_connection\_status}}
+\index{sp6t\_connection\_status@{sp6t\_connection\_status}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{sp6t\_connection\_status()}{sp6t\_connection\_status()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a0dcdabcd3c90a65ea12dfe351c640864} 
+py\+\_\+vna.\+pyvisa\+VNA.\+sp6t\+\_\+connection\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{module}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the status of the SP6T in the M9157 PXIe SP6T switch card.
+
+Args:
+    module (int): Selects which M9157 card to control. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a8c538645c6728f6314643fa4d6b2042e}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!sp6t\_enable@{sp6t\_enable}}
+\index{sp6t\_enable@{sp6t\_enable}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{sp6t\_enable()}{sp6t\_enable()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a8c538645c6728f6314643fa4d6b2042e} 
+py\+\_\+vna.\+pyvisa\+VNA.\+sp6t\+\_\+enable (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{ = {\ttfamily 1}, }\item[{}]{module}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enables control of M9157 PXIe SP6T switch card.
+
+Args:
+    state (int): Turns control of SP6T card off or on. [0, 1, default is 1]
+    module (int): Selects which M9157 card to enable. [default is 1]
+    ch (int): Channel for which switch control is enabled. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a96af47ba16d4a00d0d153f92c736dab3}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!spdt\_close\_connection@{spdt\_close\_connection}}
+\index{spdt\_close\_connection@{spdt\_close\_connection}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{spdt\_close\_connection()}{spdt\_close\_connection()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a96af47ba16d4a00d0d153f92c736dab3} 
+py\+\_\+vna.\+pyvisa\+VNA.\+spdt\+\_\+close\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{module}{ = {\ttfamily 1}, }\item[{}]{switch}{ = {\ttfamily 1}, }\item[{}]{route}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Closes a path in one of the SPDTs in the M9155 PXIe Dual SPDT switch card.
+
+Args:
+    module (int): Selects which M9155 module to control. [default is 1]
+    switch (int): Selects which of the two SPDTs in the M9155 to control. [1, 2, default is 1]
+    route (int): Selects which route to close in the selected SPDT. [1, 2, default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a87162004431b73847d7c85760065f1bf}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!spdt\_connection\_status@{spdt\_connection\_status}}
+\index{spdt\_connection\_status@{spdt\_connection\_status}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{spdt\_connection\_status()}{spdt\_connection\_status()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a87162004431b73847d7c85760065f1bf} 
+py\+\_\+vna.\+pyvisa\+VNA.\+spdt\+\_\+connection\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{module}{ = {\ttfamily 1}, }\item[{}]{switch}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the status of a given SPDT switch in the M9155 PXIe Dual SPDT switch card.
+
+Args:
+    module (int): Selects which M9155 module to control. [default is 1]
+    switch (int): Selects which of the two SPDTs in the M9155 to control. [1, 2, default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_ab30d78ac9f4e063884f2dc363b0cdd44}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!spdt\_enable@{spdt\_enable}}
+\index{spdt\_enable@{spdt\_enable}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{spdt\_enable()}{spdt\_enable()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_ab30d78ac9f4e063884f2dc363b0cdd44} 
+py\+\_\+vna.\+pyvisa\+VNA.\+spdt\+\_\+enable (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{ = {\ttfamily 1}, }\item[{}]{module}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enables control of M9155 PXIe Dual SPDT switch card in the VNA firmware.
+
+Args:
+    state (int): Turns control of M9155 card off or on. [0, 1, default is 1]
+    module (int): Selects which M9155 module to control. [1, 2, default is 1]
+    ch (int): Channel for which switch control is enabled. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_a99ba041b14ced8a3e7b8cc876a0d9dc4}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!spdt\_get\_path\_catalog@{spdt\_get\_path\_catalog}}
+\index{spdt\_get\_path\_catalog@{spdt\_get\_path\_catalog}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{spdt\_get\_path\_catalog()}{spdt\_get\_path\_catalog()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_a99ba041b14ced8a3e7b8cc876a0d9dc4} 
+py\+\_\+vna.\+pyvisa\+VNA.\+spdt\+\_\+get\+\_\+path\+\_\+catalog (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{module}{ = {\ttfamily 1}, }\item[{}]{switch}{ = {\ttfamily 1}, }\item[{}]{ch}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}HELPER FUNCTION: Returns catalog of valid paths for the M9155 PXIe Dual SPDT switch card.
+
+Args:
+    module (int): Selects which M9155 module to control. [default is 1]
+    switch (int): Selects which of the two SPDTs in the M9155 to control. [1, 2, default is 1]
+    ch (int): Channel for which switch control is enabled. [default is 1]
+\end{DoxyVerb}
+ \Hypertarget{classpy__vna_1_1pyvisa_v_n_a_aaec78420c4326090528b65f2b48e05e9}\index{py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}!wait\_for\_opc@{wait\_for\_opc}}
+\index{wait\_for\_opc@{wait\_for\_opc}!py\_vna.pyvisaVNA@{py\_vna.pyvisaVNA}}
+\doxysubsubsection{\texorpdfstring{wait\_for\_opc()}{wait\_for\_opc()}}
+{\footnotesize\ttfamily \label{classpy__vna_1_1pyvisa_v_n_a_aaec78420c4326090528b65f2b48e05e9} 
+py\+\_\+vna.\+pyvisa\+VNA.\+wait\+\_\+for\+\_\+opc (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{temp\+Timeout}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Waits for the previous command to finish executing before moving on in the script.
+
+Args:
+    tempTimeout (int): Temporary timeout in ms to be used if non-standard timeout is desired. [default is None]
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/py\+\_\+vna.\+py\end{DoxyCompactItemize}
